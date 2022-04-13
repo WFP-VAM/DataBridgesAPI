@@ -131,8 +131,8 @@ class WfpApi:
         return all_data
 
 
-MY_KEY = 'LRHWx3hPoyd2iU96VtmsBtCEg_wa'
-MY_SECRET = 'BEB4CltlzeQe_9GEB75Q9Dqxarwa'
+MY_KEY = ''
+MY_SECRET = ''
 
 api = WfpApi(api_key=MY_KEY, api_secret=MY_SECRET)
 commodities = api.get_commodity_list('GNB')
