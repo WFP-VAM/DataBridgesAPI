@@ -30,15 +30,15 @@ class NotFoundError(Exception):
 
 API_ENDPOINTS = {
     'commodities_list': {
-        'url': 'vam-data-bridges/1.1.0/Commodities/List',
+        'url': 'vam-data-bridges/1.2.0/Commodities/List',
         'method': 'GET'
     },
     'monthly_prices': {
-        'url': 'vam-data-bridges/1.1.0/MarketPrices/PriceMonthly',
+        'url': 'vam-data-bridges/1.2.0/MarketPrices/PriceMonthly',
         'method': 'GET'
     },
     'monthly_alps': {
-        'url': 'vam-data-bridges/1.1.0/MarketPrices/Alps',
+        'url': 'vam-data-bridges/1.2.0/MarketPrices/Alps',
         'method': 'GET'
     }
 }
