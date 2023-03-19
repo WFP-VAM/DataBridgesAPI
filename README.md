@@ -4,14 +4,15 @@ Scripts and applications for testing DataBridges API from the API Gateway
 # Getting started
 ## How to install
 You can pip install the package
-## Handling Credentials
+## Handling credentials
 Create an .env file to be placed in the root directory of your project looking like:
-"""
-MY_KEY='placeHereYourAPIKey'
-MY_SECRET='placeHereYourAPISecret'
-"""
+
+```
+MY_KEY='placeHereYourAPIKey'  
+MY_SECRET='placeHereYourAPISecret'  
+```
 ## Running the code
-See the examples folder to get started
+See the examples folder to see how to use the DataBridgesAPI library
 
 # How to contribute
 Your contribution is more than welcome...but we ask you to follow some rules:
