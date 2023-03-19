@@ -23,5 +23,3 @@ Your contribution is more than welcome...but we ask you to follow some rules:
 - After implementing something, test it (using pytest)!
 - Use issues to track your code.
 - **DO NOT COMMIT** sensitive files
-
-We know, they seem a lot, but after some initial effort you will thank us (or maybe not).
