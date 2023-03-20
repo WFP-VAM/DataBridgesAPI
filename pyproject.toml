@@ -1,0 +1,32 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "DataBridgesAPI"
+version = "1.0.0"
+description = "Access DataBridgesAPI data in a programmatic way"
+readme = "README.md"
+authors = [{ name = "Valerio Giuffrida", email = "valerio.giuffrida@wfp.org" },{ name = "Giulia Martini", email = "giulia.martini@wfp.org" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["Market prices", "DataBridges", "WFP"]
+dependencies = [
+    "backoff>=2.2.1",
+    "httpx==0.23.3",
+    'loguru==0.6.0',
+    'python-dotenv==1.0.0',
+]
+requires-python = ">=3.7"
+
+[project.optional-dependencies]
+dev = ["black", "bumpver", "isort", "pip-tools", "pytest"]
+
+[project.urls]
+Homepage = "https://catalog.api.wfp.org/devportal/apis/be67cddd-0fb8-4461-a91b-6b75f3146568/overview"
