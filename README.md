@@ -3,7 +3,10 @@ Scripts and applications for testing DataBridges API from the API Gateway
 
 # Getting started
 ## How to install
-You can pip install the package
+You can use pip to install the package:
+```
+pip install pip@git+https://github.com/WFP-VAM/DataBridgesAPI
+```
 ## Handling credentials
 Create an .env file to be placed in the root directory of your project looking like:
 
