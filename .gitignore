@@ -78,5 +78,5 @@ git_push.sh
 
 # Env secrets
 .env
-
+config.py
 /test_runs
