@@ -1,67 +1,67 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ipc_analysed_percentage,ipc_analysed_population,ipc_analysis_comment,ipc_area_name,ipc_country_name,ipc_create_date,ipc_data_source,ipc_data_type,ipc_id,ipc_is_latest_value,ipc_phase3_percentage,ipc_phase3_population,ipc_phase4_percentage,ipc_phase4_population,ipc_phase5_percentage,ipc_phase5_population,ipc_reference_period,ipc_update_date,ipc_year,iso3_alpha3
+1.0,43101000,Entire country,,Afghanistan,2023-11-09 10:17:00.773,GRFC 2023,IPC,1,True,0.32,13824000,0.14,6080000,0.0,0,"GRFC 2023 (IPC September 2022, proj. Nov 2022 - March 2023)",,2023,AFG
+0.09,2750000,17 rural municipalities in 3 south-western provinces,,Angola,2023-11-09 10:17:00.783,GRFC 2022 MYU,IPC,2,True,0.42,1167000,0.15,417000,0.0,0,"GRFC 2022 MYU (IPC Sep 2021, proj Oct 21 - Mar 22)",,2023,AGO
+1.0,2968000,Entire country,,Armenia,2023-11-09 10:17:00.793,WFP,CARI,3,True,0.29,852000,0.01,39000,0.0,0,WFP CARI. FSVA 2023 Round 5 (Jan 2023),,2023,ARM
+0.01,1325000,"Cox's Bazar (Rohingya refugees & host community), Bashan Char (Rohingya refugees)",Cox's Bazar,Bangladesh,2023-11-09 10:17:00.810,ENA,ENA,4,True,0.86,1135000,0.0,0,0.0,0,WFP Mini REVA (Refugees in camps/CXB and Bhashan Char) and REVA 6 (Host Community).,,2023,BGD
+1.0,22299000,Entire country,,Burkina Faso,2023-11-09 10:17:00.823,CH,CH,5,True,0.12,2704000,0.03,605000,0.0,43000,"CH April 2023, proj. June - August 2023",,2023,BFA
+1.0,12045000,Entire country,,Burundi,2023-11-09 10:17:00.833,IPC,IPC,6,True,0.18,2217000,0.01,105000,0.0,0,"IPC May 2023, current April - May 2023",,2023,BDI
+1.0,13028000,Entire country,,Bénin,2023-11-09 10:17:00.840,CH,CH,7,True,0.04,533000,0.0,14000,0.0,0,"CH April 2023, current March - May 2023",,2023,BEN
+1.0,484000,Entire country,,Cabo Verde,2023-11-09 10:17:00.853,CH,CH,8,True,0.08,41000,0.01,3000,0.0,0,"CH April 2023, current March - May 2023",,2023,CPV
+1.0,27123000,Entire country,,Cameroon,2023-11-09 10:17:00.860,CH,CH,9,True,0.1,2676000,0.01,336000,0.0,0,"CH April 2023, current March - May 2023",,2023,CMR
+1.0,6091000,Entire country ,,Central African Republic,2023-11-09 10:17:00.873,IPC,IPC,10,True,0.33,2011000,0.11,642000,0.0,0,"IPC Sep 2022, Sep 2022 - Mar 2023",,2023,CAF
+1.0,18034000,"Entire country, incl. N'Djamena",,Chad,2023-11-09 10:17:00.893,CH,CH,11,True,0.11,2064000,0.01,232000,0.0,0,"CH April 2023, proj Jun - Aug 23, update July 2023",,2023,TCD
+0.05,2478000,Venezuelan migrants,Venezuelan migrants,Colombia,2023-11-09 10:17:00.910,WFP,CARI,12,True,0.45,1115000,0.07,173000,0.0,0,WFP EFSA Nov 2022,,2023,COL
+0.95,51600000,Residents ,Residents,Colombia,2023-11-09 10:17:00.920,WFP,CARI,13,True,0.26,13416000,0.04,2064000,0.0,0,WFP EFSA Feb 2023,,2023,COL
+1.0,5836000,"Bétou, Bouémba",,Congo,2023-11-09 10:17:00.930,WFP,CARI,14,True,0.21,1219000,0.03,166000,0.0,0,WFP Aug-Sep 2022 PDM,,2023,COG
+0.83,21811000,9 districts (31 regions),,Cote d'Ivoire,2023-11-09 10:17:00.940,CH,CH,15,True,0.05,1018000,0.0,0,0.0,0,"CH April 2023, proj Jun - Aug 23",,2023,CIV
+0.94,102972000,26 provinces comprising 138 rural areas and 47 urban areas (incl. 24 in Kinshasa),,Democratic Republic of Congo,2023-11-09 10:17:00.953,IPC,IPC,16,True,0.22,22460000,0.03,3381000,0.0,0,"IPC Apr 2023, Jan - Jun 23",,2023,COD
+1.0,1182000,Entire country,,Djibouti,2023-11-09 10:17:00.963,IPC,IPC,17,True,0.16,185000,0.08,100000,0.0,0,"IPC July 2023, proj July - December 2023",,2023,DJI
+1.0,10616000,Entire country,,Dominican Republic,2023-11-09 10:17:00.973,IPC,IPC,18,True,0.13,1410000,0.01,142000,0.0,0,"IPC Nov 22, current Oct 22 - Feb 23",,2023,DOM
+1.0,505000,Migrants from Venezuela,Migrants,Ecuador,2023-11-09 10:17:00.983,GRFC 2023,CARI,19,True,0.53,265000,0.07,38000,0.0,0,EFSA Dec 2022,,2023,ECU
+,288000,Syrian refugee population (WFP beneficiaries),Syrian refugee population (WFP beneficiaries),Egypt,2023-11-09 10:17:01.000,WFP,CARI,20,True,0.66,191000,0.03,7000,0.0,0,WFP FSOM Q1 2023,,2023,EGY
+1.0,6326000,Entire country,,El Salvador,2023-11-09 10:17:01.020,GRFC 2023,IPC,21,True,0.13,846000,0.01,61000,0.0,0,"GRFC 2023 (IPC Aug 21, proj Mar -May 22)",,2023,SLV
+0.99,1188000,Entire country,,Eswatini,2023-11-09 10:17:01.043,IPC,IPC,22,True,0.23,268000,0.01,15000,0.0,0,"IPC June 2023, proj Oct 23- Mar 24",,2023,SWZ
+1.0,114964000,Entire country,,Ethiopia,2023-11-09 10:17:01.063,OCHA,HNO,23,True,0.17,20100000,0.0,0,0.0,0,HRP (February 2023) for IPC 3+.,,2023,ETH
+1.0,2444000,Entire country,,Gambia,2023-11-09 10:17:01.090,CH,CH,24,True,0.12,300000,0.01,20000,0.0,0,"CH April 2023, proj Jun - Aug 23",,2023,GMB
+1.0,32705000,Entire country,,Ghana,2023-11-09 10:17:01.103,CH,CH,25,True,0.04,1388000,0.0,69000,0.0,0,"CH April 2023, current March - May 2023",,2023,GHA
+1.0,17602000,Entire country,,Guatemala,2023-11-09 10:17:01.133,IPC,IPC,26,True,0.21,3669000,0.03,604000,0.0,0,"IPC May 2023, proj Jun - Aug 23",,2023,GTM
+0.85,11470000,Excluding Conakry,,Guinea,2023-11-09 10:17:01.160,CH,CH,27,True,0.06,697000,0.0,12000,0.0,0,"CH April 2023, proj Jun - Aug 23",,2023,GIN
+0.61,1273000,Excluding Bissau,,Guinea-Bissau,2023-11-09 10:17:01.173,CH,CH,28,True,0.08,96000,0.0,0,0.0,0,"CH April 2023, current March - May 2023",,2023,GNB
+0.91,9907000,All rural areas and nine urban areas,,Haiti,2023-11-09 10:17:01.183,GRFC 2023,IPC,29,True,0.31,3082000,0.18,1808000,0.0,0,"GRC 2023 (IPC February 2023, proj. update March-June 2023)",,2023,HTI
+1.0,9745000,Entire country,,Honduras,2023-11-09 10:17:01.193,GRFC 2023,IPC,30,True,0.21,2066000,0.04,352000,0.0,0,"GRFC 2023 (IPC February 2023, proj Jun-Aug 2023)",,2023,HND
+0.09,731000,Syrian refugees inside and outside camps,Syrian refugees inside and outside camps,Jordan,2023-11-09 10:17:01.203,CARI,CARI,31,True,0.74,541000,0.17,123000,0.0,0,WFP FSOM Q3 2023,,2023,JOR
+0.32,16618000,Arid and Semi-Arid Lands (rural),Arid and Semi-Arid Lands (rural),Kenya,2023-11-09 10:17:01.213,GRFC 2023,IPC,32,True,0.25,4214000,0.07,1225000,0.0,0,"GRFC 2023 (IPC update Jan 2023, proj March - June 2023)",,2023,KEN
+0.92,5364000,"Residents, Syrian refugees, excl. other refugees. Disaggregation available. ",,Lebanon,2023-11-09 10:17:01.220,GRFC 2023,IPC,33,True,0.36,1906000,0.07,354000,0.0,0,"GRFC 2023 (IPC Sep 2022, poj Jan - Apr 23)",,2023,LBN
+0.55,1495000,Rural population,,Lesotho,2023-11-09 10:17:01.230,IPC,IPC,34,True,0.22,325000,0.0,0,0.0,0,"IPC July 2023, proj Oct 23 - Mar 24",,2023,LSO
+0.92,4800000,Entire country,,Liberia,2023-11-09 10:17:01.260,CH,CH,35,True,0.11,510000,0.0,21000,0.0,0,"CH April 2023, proj Jun - Aug 23",,2023,LBR
+0.19,1542000,"IDPs, refugees, returnees, and migrants",,Libya,2023-11-09 10:17:01.283,WFP,CARI,36,True,0.13,199000,0.0,7000,0.0,0,"MSNA 2022 (IDPs, returnees), Socio-Economic Survey Q1 2022 (Refugees, migrants)",,2023,LBY
+0.21,6230000,Grand Sud & Est,,Madagascar,2023-11-09 10:17:01.333,GRFC 2023,IPC,37,True,0.32,1973000,0.04,252000,0.0,0,"GRFC 2023 (IPC Nov 2022, current Nov 22 - Mar 23)",,2023,MDG
+1.0,19692000,Entire country,,Malawi,2023-11-09 10:17:01.393,IPC,IPC,38,True,0.21,4136000,0.01,266000,0.0,0,"IPC July 2023, proj Oct 23 - Mar 24",,2023,MWI
+1.0,22293000,Entire country,,Mali,2023-11-09 10:17:01.410,CH,CH,39,True,0.05,1183000,0.0,76000,0.0,3000,"CH April 2023, proj Jun - Aug 23",,2023,MLI
+1.0,3544000,Entire country,,Mauritania,2023-11-09 10:17:01.443,CH,CH,40,True,0.13,444000,0.01,28000,0.0,0,"CH April 2023, proj Jun - Aug 23)",,2023,MRT
+1.0,31967000,Entire country,,Mozambique,2023-11-09 10:17:01.460,IPC,IPC,41,True,0.09,2749000,0.01,398000,0.0,0,"GRFC 2023 (IPC Nov 2022, current Nov 2022 - March 2023)",,2023,MOZ
+1.0,56000000,Entire country,,Myanmar,2023-11-09 10:17:01.470,HNO,rCARI/ HNO,42,True,0.27,15200000,0.0,0,0.0,0,GRFC 2023 (HNO 2023),,2023,MMR
+1.0,2642000,Entire country,,Namibia,2023-11-09 10:17:01.483,IPC,IPC,43,True,0.24,630000,0.02,65000,0.0,0,"IPC Sept 2023, proj. Oct 2023 - March 2024",,2023,NAM
+1.0,29270000,Entire country,,Nepal,2023-11-09 10:17:01.493,CARI,CARI,44,True,0.14,4010000,0.01,176000,0.0,0,"Eighth Round of Household Livelihoods, Food Security and Vulnerability Survey, April 2023",,2023,NPL
+1.0,25880000,Entire country,,Niger,2023-11-09 10:17:01.513,CH,CH,45,True,0.12,3130000,0.01,150000,0.0,0,"CH April 2023, proj Jun - Aug 23",,2023,NER
+0.86,193613000,26 states and Federal Capital Territory,,Nigeria,2023-11-09 10:17:01.533,CH,CH,46,True,0.12,23722000,0.01,1139000,0.0,0,"CH April 2023, proj Jun - Aug 23",,2023,NGA
+0.17,36702000,"Balochistan, Khyber Pakhtunkhwa and Sindh",,Pakistan,2023-11-09 10:17:01.560,IPC,IPC,47,True,0.26,9597000,0.06,2212000,0.0,0,"IPC April 2023, projection Nov 23 - Jan 2024",,2023,PAK
+1.0,5500000,Entire territory,,Palestine,2023-11-09 10:17:01.583,HNO 2023,HNO,48,True,0.14,791000,0.14,750000,0.0,0,GRFC 2023 (HNO 2023),,2023,PSE
+1.0,12739000,Entire country,,Rwanda,2023-11-09 10:17:01.603,WFP,CARI,49,True,0.2,2553000,0.02,244000,0.0,0,WFP CFSVA October 2021  (April - May 21),,2023,RWA
+1.0,7541000,Entire country,,Sierra Leone,2023-11-09 10:17:01.643,CH,CH,50,True,0.15,1146000,0.0,34000,0.0,0,"CH April 2023, proj Jun - Aug 23",,2023,SLE
+1.0,16955000,Entire country (rural and urban areas and IDP settlements),,Somalia,2023-11-09 10:17:01.683,IPC,IPC,51,True,0.28,4689000,0.11,1854000,0.0,40000,"IPC April 2023, proj Apr - Jun 23",,2023,SOM
+1.0,12374000,Entire country,,South Sudan,2023-11-09 10:17:01.710,GRFC 2023,IPC,52,True,0.39,4822000,0.23,2899000,0.0,43000,"GRFC 2023 (IPC Oct  2022, proj Apr - Jul 23)",,2023,SSD
+1.0,22602000,Entire country,,Sri Lanka,2023-11-09 10:17:01.733,WFP,CARI,53,True,0.17,3900000,0.0,10000,0.0,0,WFP CFSAM May 2023,,2023,LKA
+1.0,48580000,Entire country,,Sudan,2023-11-09 10:17:01.763,IPC,IPC,54,True,0.29,14038000,0.13,6256000,0.0,0,"IPC June 2023, proj July-Sept 23",,2023,SDN
+1.0,22095000,Entire country,,Syrian Arab Republic,2023-11-09 10:17:01.800,HNO 2023,CARI,55,True,0.43,9450000,0.12,2647000,0.0,0,"HNO 2023 (in-camp and inaccessible districts), FSA-FSLA 2021 (Syrian residents). IPC 4 (severely) includes 1.97M in-camp population. ",,2023,SYR
+1.0,17876000,Entire country,,Sénégal,2023-11-09 10:17:01.813,CH,CH,56,True,0.07,1206000,0.0,57000,0.0,0,"CH April 2023, proj Jun - Aug 23",,2023,SEN
+0.17,10506000,28 councils + Zanzibar,,Tanzania,2023-11-09 10:17:01.863,IPC,IPC,57,True,0.1,1093000,0.0,18000,0.0,0,"IPC Oct 2022, proj Oct 22 - Feb 23",,2023,TZA
+1.0,1340000,Entire country,,Timor Leste,2023-11-09 10:17:01.910,IPC,IPC,58,True,0.21,286000,0.01,13000,0.0,0,"IPC Nov 2022, current November 2022 - April 2023",,2023,TLS
+0.73,6056000,"Entire country, excluding 3 prefectures",,Togo,2023-11-09 10:17:01.923,CH,CH,59,True,0.07,448000,0.01,40000,0.0,0,"CH April 2023, proj Jun - Aug 23",,2023,TGO
+0.01,48000,Syrian refugees in camps (WFP beneficiaries),Syrian refugees in camps (WFP beneficiaries),Türkiye,2023-11-09 10:17:01.933,CARI,CARI,60,True,0.0,48000,0.0,0,0.0,0,CARI (caseload),,2023,TUR
+1.0,45600000,Entire country,,Uganda,2023-11-09 10:17:01.943,GRFC 2023,FEWSNET,61,True,0.05,2500000,0.0,0,0.0,0,GRFC 2023 (FEWS NET March-May 2023).,,2023,UGA
+1.0,43300000,Entire country,,Ukraine,2023-11-09 10:17:01.950,OCHA,HNO,62,True,0.26,11100000,0.0,0,0.0,0,HNO 2023 / Flash Appeal 2022,,2023,UKR
+1.0,29063000,Entire country,,Venezuela,2023-11-09 10:17:01.960,GRFC 2020,CARI,63,True,0.24,7000000,0.08,2300000,0.0,0,"GRFC 2020  (WFP EFSA, Jul- Sep 19)",,2023,VEN
+1.0,31900000,Entire country,,Yemen,2023-11-09 10:17:01.973,IPC,IPC,64,True,0.34,10832000,0.19,6080000,0.0,0,IPC projection update October - December 2022. Latest 2022 analysis chosen over 2022 peak based on RB judgement ,,2023,YEM
+0.71,13490000,91 districts,,Zambia,2023-11-09 10:17:01.983,IPC,IPC,65,True,0.14,1952000,0.0,0,0.0,0,IPC June 2022 proj Oct 22 - Mar 23,,2023,ZMB
+1.0,15400000,Entire country,,Zimbabwe,2023-11-09 10:17:01.993,GRFC 2023,FEWSNET,66,True,0.23,3500000,0.0,0,0.0,0,GRFC 2023 (FEWSNET Jan-March 2023),,2023,ZWE
