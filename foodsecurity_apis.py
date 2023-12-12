@@ -40,8 +40,10 @@ with data_bridges_client.ApiClient(token.refresh_configuration()) as api_client:
         # Add more elif statements for other endpoints as needed
 
         # Convert the 'items' list in the response to a DataFrame
-        # Convert the 'items' list in the response to a DataFrame
-        df = pd.DataFrame(response['items'])
+        # dicts = [ast.literal_eval(item) for item in response['items']]
+        dicts = [item._data_store for item in response['items']]
+
+        df = pd.DataFrame(dicts)
 
         # Write the DataFrame to a CSV file
         df.to_csv(f'{args.endpoint.lower()}_output.csv', index=False)
