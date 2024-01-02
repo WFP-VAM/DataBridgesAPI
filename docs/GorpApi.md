@@ -1,6 +1,6 @@
 # data_bridges_client.GorpApi
 
-All URIs are relative to *https://api.wfp.org/vam-data-bridges/1.3.1*
+All URIs are relative to *https://api.wfp.org/vam-data-bridges/1.4.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -26,10 +26,10 @@ from data_bridges_client.api import gorp_api
 from data_bridges_client.model.bad_request_dto import BadRequestDTO
 from data_bridges_client.model.gorp_value_with_changes_paged_result import GorpValueWithChangesPagedResult
 from pprint import pprint
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/1.3.1
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/1.4.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/1.3.1"
+    host = "https://api.wfp.org/vam-data-bridges/1.4.0"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -39,7 +39,7 @@ configuration = data_bridges_client.Configuration(
 
 # Configure OAuth2 access token for authorization: default
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/1.3.1"
+    host = "https://api.wfp.org/vam-data-bridges/1.4.0"
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
@@ -48,7 +48,7 @@ with data_bridges_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = gorp_api.GorpApi(api_client)
     page = 1 # int |  (optional) if omitted the server will use the default value of 1
-    env = "prod" # str | Environment.   * `prod` - api.vam.wfp.org   * `dev` - dev.api.vam.wfp.org (optional)
+    env = "prod" # str | Environment.   * `prod` - api.vam.wfp.org   * `dev` - api.vam.wfp.org (optional)
 
     # example passing only required values which don't have defaults set
     # and optional values
@@ -66,7 +66,7 @@ with data_bridges_client.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int**|  | [optional] if omitted the server will use the default value of 1
- **env** | **str**| Environment.   * &#x60;prod&#x60; - api.vam.wfp.org   * &#x60;dev&#x60; - dev.api.vam.wfp.org | [optional]
+ **env** | **str**| Environment.   * &#x60;prod&#x60; - api.vam.wfp.org   * &#x60;dev&#x60; - api.vam.wfp.org | [optional]
 
 ### Return type
 
@@ -79,7 +79,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, text/plain
+ - **Accept**: text/plain, application/json, text/json
 
 
 ### HTTP response details
@@ -109,10 +109,10 @@ from data_bridges_client.api import gorp_api
 from data_bridges_client.model.bad_request_dto import BadRequestDTO
 from data_bridges_client.model.gorp_value_with_changes_paged_result import GorpValueWithChangesPagedResult
 from pprint import pprint
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/1.3.1
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/1.4.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/1.3.1"
+    host = "https://api.wfp.org/vam-data-bridges/1.4.0"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -122,7 +122,7 @@ configuration = data_bridges_client.Configuration(
 
 # Configure OAuth2 access token for authorization: default
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/1.3.1"
+    host = "https://api.wfp.org/vam-data-bridges/1.4.0"
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
@@ -131,7 +131,7 @@ with data_bridges_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = gorp_api.GorpApi(api_client)
     page = 1 # int |  (optional) if omitted the server will use the default value of 1
-    env = "prod" # str | Environment.   * `prod` - api.vam.wfp.org   * `dev` - dev.api.vam.wfp.org (optional)
+    env = "prod" # str | Environment.   * `prod` - api.vam.wfp.org   * `dev` - api.vam.wfp.org (optional)
 
     # example passing only required values which don't have defaults set
     # and optional values
@@ -149,7 +149,7 @@ with data_bridges_client.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int**|  | [optional] if omitted the server will use the default value of 1
- **env** | **str**| Environment.   * &#x60;prod&#x60; - api.vam.wfp.org   * &#x60;dev&#x60; - dev.api.vam.wfp.org | [optional]
+ **env** | **str**| Environment.   * &#x60;prod&#x60; - api.vam.wfp.org   * &#x60;dev&#x60; - api.vam.wfp.org | [optional]
 
 ### Return type
 
@@ -162,7 +162,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, text/plain
+ - **Accept**: text/plain, application/json, text/json
 
 
 ### HTTP response details

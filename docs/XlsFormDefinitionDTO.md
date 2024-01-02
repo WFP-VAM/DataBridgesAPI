@@ -4,8 +4,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**xls_form_field_label** | **str, none_type** |  | [optional] 
 **xls_form_field_name** | **str, none_type** |  | [optional] 
+**xls_form_field_label** | **str, none_type** |  | [optional] 
 **xls_form_field_row** | **int** |  | [optional] 
 **xls_form_field_type** | **str, none_type** |  | [optional] 
 **xls_form_list_id** | **int, none_type** |  | [optional] 

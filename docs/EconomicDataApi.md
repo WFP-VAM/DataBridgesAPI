@@ -1,6 +1,6 @@
 # data_bridges_client.EconomicDataApi
 
-All URIs are relative to *https://api.wfp.org/vam-data-bridges/1.3.1*
+All URIs are relative to *https://api.wfp.org/vam-data-bridges/1.4.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -26,10 +26,10 @@ from data_bridges_client.api import economic_data_api
 from data_bridges_client.model.problem_details import ProblemDetails
 from data_bridges_client.model.economic_indicator_property_paged_result import EconomicIndicatorPropertyPagedResult
 from pprint import pprint
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/1.3.1
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/1.4.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/1.3.1"
+    host = "https://api.wfp.org/vam-data-bridges/1.4.0"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -39,7 +39,7 @@ configuration = data_bridges_client.Configuration(
 
 # Configure OAuth2 access token for authorization: default
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/1.3.1"
+    host = "https://api.wfp.org/vam-data-bridges/1.4.0"
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
@@ -51,7 +51,7 @@ with data_bridges_client.ApiClient(configuration) as api_client:
     indicator_name = "" # str | Unique indicator name. (optional) if omitted the server will use the default value of ""
     iso3 = "" # str | The code to identify the country. Must be a ISO-3166 Alpha 3 code. (optional) if omitted the server will use the default value of ""
     format = "json" # str | Output format: [JSON|CSV] Json is the default value (optional) if omitted the server will use the default value of "json"
-    env = "prod" # str | Environment.   * `prod` - api.vam.wfp.org   * `dev` - dev.api.vam.wfp.org (optional)
+    env = "prod" # str | Environment.   * `prod` - api.vam.wfp.org   * `dev` - api.vam.wfp.org (optional)
 
     # example passing only required values which don't have defaults set
     # and optional values
@@ -72,7 +72,7 @@ Name | Type | Description  | Notes
  **indicator_name** | **str**| Unique indicator name. | [optional] if omitted the server will use the default value of ""
  **iso3** | **str**| The code to identify the country. Must be a ISO-3166 Alpha 3 code. | [optional] if omitted the server will use the default value of ""
  **format** | **str**| Output format: [JSON|CSV] Json is the default value | [optional] if omitted the server will use the default value of "json"
- **env** | **str**| Environment.   * &#x60;prod&#x60; - api.vam.wfp.org   * &#x60;dev&#x60; - dev.api.vam.wfp.org | [optional]
+ **env** | **str**| Environment.   * &#x60;prod&#x60; - api.vam.wfp.org   * &#x60;dev&#x60; - api.vam.wfp.org | [optional]
 
 ### Return type
 
@@ -85,7 +85,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, text/plain
+ - **Accept**: text/plain, application/json, text/json
 
 
 ### HTTP response details
@@ -114,10 +114,10 @@ import data_bridges_client
 from data_bridges_client.api import economic_data_api
 from data_bridges_client.model.problem_details import ProblemDetails
 from pprint import pprint
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/1.3.1
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/1.4.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/1.3.1"
+    host = "https://api.wfp.org/vam-data-bridges/1.4.0"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -127,7 +127,7 @@ configuration = data_bridges_client.Configuration(
 
 # Configure OAuth2 access token for authorization: default
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/1.3.1"
+    host = "https://api.wfp.org/vam-data-bridges/1.4.0"
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
@@ -141,7 +141,7 @@ with data_bridges_client.ApiClient(configuration) as api_client:
     start_date = dateutil_parser('1970-01-01T00:00:00.00Z') # datetime | Starting date for the range in which data was collected. Use the date formats defined by RFC 3339 ; use strings matching year \\\"-\\\" month \\\"-\\\" day (e.g. 2020/06/24) (optional)
     end_date = dateutil_parser('1970-01-01T00:00:00.00Z') # datetime | Ending date for the range in which data was collected. Use the date formats defined by RFC 3339 ; use strings matching year \\\"-\\\" month \\\"-\\\" day (e.g. 2020/06/24) (optional)
     format = "json" # str | Output format: [JSON|CSV] Json is the default value (optional) if omitted the server will use the default value of "json"
-    env = "prod" # str | Environment.   * `prod` - api.vam.wfp.org   * `dev` - dev.api.vam.wfp.org (optional)
+    env = "prod" # str | Environment.   * `prod` - api.vam.wfp.org   * `dev` - api.vam.wfp.org (optional)
 
     # example passing only required values which don't have defaults set
     try:
@@ -172,7 +172,7 @@ Name | Type | Description  | Notes
  **start_date** | **datetime**| Starting date for the range in which data was collected. Use the date formats defined by RFC 3339 ; use strings matching year \\\&quot;-\\\&quot; month \\\&quot;-\\\&quot; day (e.g. 2020/06/24) | [optional]
  **end_date** | **datetime**| Ending date for the range in which data was collected. Use the date formats defined by RFC 3339 ; use strings matching year \\\&quot;-\\\&quot; month \\\&quot;-\\\&quot; day (e.g. 2020/06/24) | [optional]
  **format** | **str**| Output format: [JSON|CSV] Json is the default value | [optional] if omitted the server will use the default value of "json"
- **env** | **str**| Environment.   * &#x60;prod&#x60; - api.vam.wfp.org   * &#x60;dev&#x60; - dev.api.vam.wfp.org | [optional]
+ **env** | **str**| Environment.   * &#x60;prod&#x60; - api.vam.wfp.org   * &#x60;dev&#x60; - api.vam.wfp.org | [optional]
 
 ### Return type
 
@@ -185,7 +185,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, text/plain
+ - **Accept**: text/plain, application/json, text/json
 
 
 ### HTTP response details

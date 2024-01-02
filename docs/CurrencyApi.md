@@ -1,6 +1,6 @@
 # data_bridges_client.CurrencyApi
 
-All URIs are relative to *https://api.wfp.org/vam-data-bridges/1.3.1*
+All URIs are relative to *https://api.wfp.org/vam-data-bridges/1.4.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -26,10 +26,10 @@ from data_bridges_client.api import currency_api
 from data_bridges_client.model.paged_currency_list_dto import PagedCurrencyListDTO
 from data_bridges_client.model.bad_request_dto import BadRequestDTO
 from pprint import pprint
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/1.3.1
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/1.4.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/1.3.1"
+    host = "https://api.wfp.org/vam-data-bridges/1.4.0"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -39,7 +39,7 @@ configuration = data_bridges_client.Configuration(
 
 # Configure OAuth2 access token for authorization: default
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/1.3.1"
+    host = "https://api.wfp.org/vam-data-bridges/1.4.0"
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
@@ -52,7 +52,7 @@ with data_bridges_client.ApiClient(configuration) as api_client:
     currency_id = 0 # int | Unique code to identify the currency in internal VAM currencies. (optional) if omitted the server will use the default value of 0
     page = 1 # int | Page number for paged results (optional) if omitted the server will use the default value of 1
     format = "json" # str | Output format: [JSON|CSV] Json is the default value (optional) if omitted the server will use the default value of "json"
-    env = "prod" # str | Environment.   * `prod` - api.vam.wfp.org   * `dev` - dev.api.vam.wfp.org (optional)
+    env = "prod" # str | Environment.   * `prod` - api.vam.wfp.org   * `dev` - api.vam.wfp.org (optional)
 
     # example passing only required values which don't have defaults set
     # and optional values
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
  **currency_id** | **int**| Unique code to identify the currency in internal VAM currencies. | [optional] if omitted the server will use the default value of 0
  **page** | **int**| Page number for paged results | [optional] if omitted the server will use the default value of 1
  **format** | **str**| Output format: [JSON|CSV] Json is the default value | [optional] if omitted the server will use the default value of "json"
- **env** | **str**| Environment.   * &#x60;prod&#x60; - api.vam.wfp.org   * &#x60;dev&#x60; - dev.api.vam.wfp.org | [optional]
+ **env** | **str**| Environment.   * &#x60;prod&#x60; - api.vam.wfp.org   * &#x60;dev&#x60; - api.vam.wfp.org | [optional]
 
 ### Return type
 
@@ -87,7 +87,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, text/plain
+ - **Accept**: text/plain, application/json, text/json
 
 
 ### HTTP response details
@@ -117,10 +117,10 @@ from data_bridges_client.api import currency_api
 from data_bridges_client.model.bad_request_dto import BadRequestDTO
 from data_bridges_client.model.usd_indirect_quotation_paged_result import UsdIndirectQuotationPagedResult
 from pprint import pprint
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/1.3.1
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/1.4.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/1.3.1"
+    host = "https://api.wfp.org/vam-data-bridges/1.4.0"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -130,7 +130,7 @@ configuration = data_bridges_client.Configuration(
 
 # Configure OAuth2 access token for authorization: default
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/1.3.1"
+    host = "https://api.wfp.org/vam-data-bridges/1.4.0"
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
@@ -142,7 +142,7 @@ with data_bridges_client.ApiClient(configuration) as api_client:
     currency_name = "" # str | the ISO3 code for the currency, based on ISO4217 (optional) if omitted the server will use the default value of ""
     page = 1 # int | Page number for paged results (optional) if omitted the server will use the default value of 1
     format = "json" # str | Output format: [JSON|CSV] Json is the default value (optional) if omitted the server will use the default value of "json"
-    env = "prod" # str | Environment.   * `prod` - api.vam.wfp.org   * `dev` - dev.api.vam.wfp.org (optional)
+    env = "prod" # str | Environment.   * `prod` - api.vam.wfp.org   * `dev` - api.vam.wfp.org (optional)
 
     # example passing only required values which don't have defaults set
     # and optional values
@@ -163,7 +163,7 @@ Name | Type | Description  | Notes
  **currency_name** | **str**| the ISO3 code for the currency, based on ISO4217 | [optional] if omitted the server will use the default value of ""
  **page** | **int**| Page number for paged results | [optional] if omitted the server will use the default value of 1
  **format** | **str**| Output format: [JSON|CSV] Json is the default value | [optional] if omitted the server will use the default value of "json"
- **env** | **str**| Environment.   * &#x60;prod&#x60; - api.vam.wfp.org   * &#x60;dev&#x60; - dev.api.vam.wfp.org | [optional]
+ **env** | **str**| Environment.   * &#x60;prod&#x60; - api.vam.wfp.org   * &#x60;dev&#x60; - api.vam.wfp.org | [optional]
 
 ### Return type
 
@@ -176,7 +176,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, text/plain
+ - **Accept**: text/plain, application/json, text/json
 
 
 ### HTTP response details

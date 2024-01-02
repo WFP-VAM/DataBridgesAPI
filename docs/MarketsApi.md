@@ -1,6 +1,6 @@
 # data_bridges_client.MarketsApi
 
-All URIs are relative to *https://api.wfp.org/vam-data-bridges/1.3.1*
+All URIs are relative to *https://api.wfp.org/vam-data-bridges/1.4.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -28,10 +28,10 @@ from data_bridges_client.api import markets_api
 from data_bridges_client.model.bad_request_dto import BadRequestDTO
 from data_bridges_client.model.i_feature import IFeature
 from pprint import pprint
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/1.3.1
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/1.4.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/1.3.1"
+    host = "https://api.wfp.org/vam-data-bridges/1.4.0"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -41,7 +41,7 @@ configuration = data_bridges_client.Configuration(
 
 # Configure OAuth2 access token for authorization: default
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/1.3.1"
+    host = "https://api.wfp.org/vam-data-bridges/1.4.0"
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
@@ -50,7 +50,7 @@ with data_bridges_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = markets_api.MarketsApi(api_client)
     adm0code = 1 # int | The admin code of the country (optional)
-    env = "prod" # str | Environment.   * `prod` - api.vam.wfp.org   * `dev` - dev.api.vam.wfp.org (optional)
+    env = "prod" # str | Environment.   * `prod` - api.vam.wfp.org   * `dev` - api.vam.wfp.org (optional)
 
     # example passing only required values which don't have defaults set
     # and optional values
@@ -68,7 +68,7 @@ with data_bridges_client.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **adm0code** | **int**| The admin code of the country | [optional]
- **env** | **str**| Environment.   * &#x60;prod&#x60; - api.vam.wfp.org   * &#x60;dev&#x60; - dev.api.vam.wfp.org | [optional]
+ **env** | **str**| Environment.   * &#x60;prod&#x60; - api.vam.wfp.org   * &#x60;dev&#x60; - api.vam.wfp.org | [optional]
 
 ### Return type
 
@@ -109,10 +109,10 @@ import time
 import data_bridges_client
 from data_bridges_client.api import markets_api
 from pprint import pprint
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/1.3.1
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/1.4.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/1.3.1"
+    host = "https://api.wfp.org/vam-data-bridges/1.4.0"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -122,7 +122,7 @@ configuration = data_bridges_client.Configuration(
 
 # Configure OAuth2 access token for authorization: default
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/1.3.1"
+    host = "https://api.wfp.org/vam-data-bridges/1.4.0"
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
@@ -133,7 +133,7 @@ with data_bridges_client.ApiClient(configuration) as api_client:
     country_code = "countryCode_example" # str | The code to identify the country. It can be a ISO-3166 Alpha 3 code or the VAM internal admin0code (optional)
     page = 1 # int | page number for paged results (optional) if omitted the server will use the default value of 1
     format = "json" # str | Output format: [JSON|CSV] Json is the default value (optional) if omitted the server will use the default value of "json"
-    env = "prod" # str | Environment.   * `prod` - api.vam.wfp.org   * `dev` - dev.api.vam.wfp.org (optional)
+    env = "prod" # str | Environment.   * `prod` - api.vam.wfp.org   * `dev` - api.vam.wfp.org (optional)
 
     # example passing only required values which don't have defaults set
     # and optional values
@@ -153,7 +153,7 @@ Name | Type | Description  | Notes
  **country_code** | **str**| The code to identify the country. It can be a ISO-3166 Alpha 3 code or the VAM internal admin0code | [optional]
  **page** | **int**| page number for paged results | [optional] if omitted the server will use the default value of 1
  **format** | **str**| Output format: [JSON|CSV] Json is the default value | [optional] if omitted the server will use the default value of "json"
- **env** | **str**| Environment.   * &#x60;prod&#x60; - api.vam.wfp.org   * &#x60;dev&#x60; - dev.api.vam.wfp.org | [optional]
+ **env** | **str**| Environment.   * &#x60;prod&#x60; - api.vam.wfp.org   * &#x60;dev&#x60; - api.vam.wfp.org | [optional]
 
 ### Return type
 
@@ -166,7 +166,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, text/plain
+ - **Accept**: text/plain, application/json, text/json
 
 
 ### HTTP response details
@@ -193,10 +193,10 @@ import time
 import data_bridges_client
 from data_bridges_client.api import markets_api
 from pprint import pprint
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/1.3.1
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/1.4.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/1.3.1"
+    host = "https://api.wfp.org/vam-data-bridges/1.4.0"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -206,7 +206,7 @@ configuration = data_bridges_client.Configuration(
 
 # Configure OAuth2 access token for authorization: default
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/1.3.1"
+    host = "https://api.wfp.org/vam-data-bridges/1.4.0"
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
@@ -216,7 +216,7 @@ with data_bridges_client.ApiClient(configuration) as api_client:
     api_instance = markets_api.MarketsApi(api_client)
     adm0code = 1 # int | The admin code of the country (optional)
     local_names = False # bool | If true the name of markets and regions will be localized if available (optional) if omitted the server will use the default value of False
-    env = "prod" # str | Environment.   * `prod` - api.vam.wfp.org   * `dev` - dev.api.vam.wfp.org (optional)
+    env = "prod" # str | Environment.   * `prod` - api.vam.wfp.org   * `dev` - api.vam.wfp.org (optional)
 
     # example passing only required values which don't have defaults set
     # and optional values
@@ -235,7 +235,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **adm0code** | **int**| The admin code of the country | [optional]
  **local_names** | **bool**| If true the name of markets and regions will be localized if available | [optional] if omitted the server will use the default value of False
- **env** | **str**| Environment.   * &#x60;prod&#x60; - api.vam.wfp.org   * &#x60;dev&#x60; - dev.api.vam.wfp.org | [optional]
+ **env** | **str**| Environment.   * &#x60;prod&#x60; - api.vam.wfp.org   * &#x60;dev&#x60; - api.vam.wfp.org | [optional]
 
 ### Return type
 
@@ -248,7 +248,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, text/plain
+ - **Accept**: text/plain, application/json, text/json
 
 
 ### HTTP response details
@@ -277,10 +277,10 @@ from data_bridges_client.api import markets_api
 from data_bridges_client.model.bad_request_dto import BadRequestDTO
 from data_bridges_client.model.nearby_markets_dto import NearbyMarketsDTO
 from pprint import pprint
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/1.3.1
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/1.4.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/1.3.1"
+    host = "https://api.wfp.org/vam-data-bridges/1.4.0"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -290,7 +290,7 @@ configuration = data_bridges_client.Configuration(
 
 # Configure OAuth2 access token for authorization: default
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/1.3.1"
+    host = "https://api.wfp.org/vam-data-bridges/1.4.0"
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
@@ -301,7 +301,7 @@ with data_bridges_client.ApiClient(configuration) as api_client:
     adm0code = 1 # int | code for the country as retrieved from https://api.vam.wfp.org/geodata/CountriesInRegion (optional)
     lat = 3.14 # float | latitude of the point that will be used to search for existing nearby markets. Geo-reference standard used for this coordinate is decimal (optional)
     lng = 3.14 # float | longitude of the point that will be used to search for existing nearby markets.  Geo-reference standard used for this coordinate is decimal (optional)
-    env = "prod" # str | Environment.   * `prod` - api.vam.wfp.org   * `dev` - dev.api.vam.wfp.org (optional)
+    env = "prod" # str | Environment.   * `prod` - api.vam.wfp.org   * `dev` - api.vam.wfp.org (optional)
 
     # example passing only required values which don't have defaults set
     # and optional values
@@ -321,7 +321,7 @@ Name | Type | Description  | Notes
  **adm0code** | **int**| code for the country as retrieved from https://api.vam.wfp.org/geodata/CountriesInRegion | [optional]
  **lat** | **float**| latitude of the point that will be used to search for existing nearby markets. Geo-reference standard used for this coordinate is decimal | [optional]
  **lng** | **float**| longitude of the point that will be used to search for existing nearby markets.  Geo-reference standard used for this coordinate is decimal | [optional]
- **env** | **str**| Environment.   * &#x60;prod&#x60; - api.vam.wfp.org   * &#x60;dev&#x60; - dev.api.vam.wfp.org | [optional]
+ **env** | **str**| Environment.   * &#x60;prod&#x60; - api.vam.wfp.org   * &#x60;dev&#x60; - api.vam.wfp.org | [optional]
 
 ### Return type
 

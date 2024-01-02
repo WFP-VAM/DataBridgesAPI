@@ -1,6 +1,6 @@
 # data_bridges_client.XlsFormsApi
 
-All URIs are relative to *https://api.wfp.org/vam-data-bridges/1.3.1*
+All URIs are relative to *https://api.wfp.org/vam-data-bridges/1.4.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -26,10 +26,10 @@ from data_bridges_client.api import xls_forms_api
 from data_bridges_client.model.bad_request_dto import BadRequestDTO
 from data_bridges_client.model.xls_form_definition_dto import XlsFormDefinitionDTO
 from pprint import pprint
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/1.3.1
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/1.4.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/1.3.1"
+    host = "https://api.wfp.org/vam-data-bridges/1.4.0"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -39,7 +39,7 @@ configuration = data_bridges_client.Configuration(
 
 # Configure OAuth2 access token for authorization: default
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/1.3.1"
+    host = "https://api.wfp.org/vam-data-bridges/1.4.0"
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
@@ -48,7 +48,7 @@ with data_bridges_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = xls_forms_api.XlsFormsApi(api_client)
     xls_form_id = 1 # int | unique identifier for the XLS Form, as retrieved from /XLSForms (optional)
-    env = "prod" # str | Environment.   * `prod` - api.vam.wfp.org   * `dev` - dev.api.vam.wfp.org (optional)
+    env = "prod" # str | Environment.   * `prod` - api.vam.wfp.org   * `dev` - api.vam.wfp.org (optional)
 
     # example passing only required values which don't have defaults set
     # and optional values
@@ -66,7 +66,7 @@ with data_bridges_client.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **xls_form_id** | **int**| unique identifier for the XLS Form, as retrieved from /XLSForms | [optional]
- **env** | **str**| Environment.   * &#x60;prod&#x60; - api.vam.wfp.org   * &#x60;dev&#x60; - dev.api.vam.wfp.org | [optional]
+ **env** | **str**| Environment.   * &#x60;prod&#x60; - api.vam.wfp.org   * &#x60;dev&#x60; - api.vam.wfp.org | [optional]
 
 ### Return type
 
@@ -109,10 +109,10 @@ from data_bridges_client.api import xls_forms_api
 from data_bridges_client.model.bad_request_dto import BadRequestDTO
 from data_bridges_client.model.paged_xls_form_list_dto import PagedXlsFormListDTO
 from pprint import pprint
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/1.3.1
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/1.4.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/1.3.1"
+    host = "https://api.wfp.org/vam-data-bridges/1.4.0"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -122,7 +122,7 @@ configuration = data_bridges_client.Configuration(
 
 # Configure OAuth2 access token for authorization: default
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/1.3.1"
+    host = "https://api.wfp.org/vam-data-bridges/1.4.0"
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
@@ -134,7 +134,7 @@ with data_bridges_client.ApiClient(configuration) as api_client:
     page = 1 # int | page number for paged results (optional) if omitted the server will use the default value of 1
     start_date = dateutil_parser('1970-01-01T00:00:00.00Z') # datetime | starting date for the range in which data using this XLSForm was collected. Use the date formats defined by RFC 3339 ; use strings matching year \"-\" month \"-\" day (e.g. 2020/06/24) (optional)
     end_date = dateutil_parser('1970-01-01T00:00:00.00Z') # datetime | ending date for the range in which data using this XLSForm was collected. Use the date formats defined by RFC 3339 ; use strings matching year \"-\" month \"-\" day (e.g. 2020/06/24) (optional)
-    env = "prod" # str | Environment.   * `prod` - api.vam.wfp.org   * `dev` - dev.api.vam.wfp.org (optional)
+    env = "prod" # str | Environment.   * `prod` - api.vam.wfp.org   * `dev` - api.vam.wfp.org (optional)
 
     # example passing only required values which don't have defaults set
     # and optional values
@@ -155,7 +155,7 @@ Name | Type | Description  | Notes
  **page** | **int**| page number for paged results | [optional] if omitted the server will use the default value of 1
  **start_date** | **datetime**| starting date for the range in which data using this XLSForm was collected. Use the date formats defined by RFC 3339 ; use strings matching year \&quot;-\&quot; month \&quot;-\&quot; day (e.g. 2020/06/24) | [optional]
  **end_date** | **datetime**| ending date for the range in which data using this XLSForm was collected. Use the date formats defined by RFC 3339 ; use strings matching year \&quot;-\&quot; month \&quot;-\&quot; day (e.g. 2020/06/24) | [optional]
- **env** | **str**| Environment.   * &#x60;prod&#x60; - api.vam.wfp.org   * &#x60;dev&#x60; - dev.api.vam.wfp.org | [optional]
+ **env** | **str**| Environment.   * &#x60;prod&#x60; - api.vam.wfp.org   * &#x60;dev&#x60; - api.vam.wfp.org | [optional]
 
 ### Return type
 
