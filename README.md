@@ -59,8 +59,15 @@ KEY = ''
 SECRET = ''
 token = WfpApiToken(api_key=KEY, api_secret=SECRET)
 
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/1.4.0
+# See configuration.py for a list of all supported configuration parameters.
+configuration = data_bridges_client.Configuration(
+    host = "https://api.wfp.org/vam-data-bridges/1.4.0"
+)
+configuration.access_token = token.refresh()
+
 # Enter a context with an instance of the API client using a fresh token
-with data_bridges_client.ApiClient(token.refresh_configuration()) as api_client:
+with data_bridges_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = commodities_api.CommoditiesApi(api_client)
     country_code = "SEN" # str | The code to identify the country. It can be a ISO-3166 Alpha 3 code or the VAM internal admin0code (optional)
