@@ -80,3 +80,9 @@ git_push.sh
 .env
 config.py
 /test_runs
+
+
+# custom
+*.csv
+foodsecurity_apis.py
+swagger(2).json
