@@ -1,6 +1,6 @@
 # data_bridges_client.CommodityUnitsApi
 
-All URIs are relative to *https://api.wfp.org/vam-data-bridges/1.3.1*
+All URIs are relative to *https://api.wfp.org/vam-data-bridges/2.0.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **commodity_units_conversion_list_get**
-> PagedCommodityListDTO commodity_units_conversion_list_get()
+> PagedCommodityListDTO commodity_units_conversion_list_get(country_code=country_code, commodity_id=commodity_id, from_unit_id=from_unit_id, to_unit_id=to_unit_id, page=page, format=format, env=env)
 
 Provides conversion factors to Kilogram or Litres for each convertible unit of measure.
 
@@ -21,15 +21,16 @@ Provides conversion factors to Kilogram or Litres for each convertible unit of m
 
 ```python
 import time
+import os
 import data_bridges_client
-from data_bridges_client.api import commodity_units_api
-from data_bridges_client.model.bad_request_dto import BadRequestDTO
-from data_bridges_client.model.paged_commodity_list_dto import PagedCommodityListDTO
+from data_bridges_client.models.paged_commodity_list_dto import PagedCommodityListDTO
+from data_bridges_client.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/1.3.1
+
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/2.0.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/1.3.1"
+    host = "https://api.wfp.org/vam-data-bridges/2.0.0"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -37,46 +38,43 @@ configuration = data_bridges_client.Configuration(
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
 
-# Configure OAuth2 access token for authorization: default
-configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/1.3.1"
-)
-configuration.access_token = 'YOUR_ACCESS_TOKEN'
+configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
 with data_bridges_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = commodity_units_api.CommodityUnitsApi(api_client)
-    country_code = "countryCode_example" # str | The code to identify the country. It can be a ISO-3166 Alpha 3 code or the VAM internal admin0code. (optional)
-    commodity_id = 0 # int | The exact ID of a Commodity, as found in /Commodities/List (optional) if omitted the server will use the default value of 0
-    from_unit_id = 0 # int | The exact ID of the original unit of measure of the price of a commodity, as found in /CommodityUnits/List (optional) if omitted the server will use the default value of 0
-    to_unit_id = 0 # int | The exact ID of the converted unit of measure of the price of a commodity, as found in /CommodityUnits/List (optional) if omitted the server will use the default value of 0
-    page = 1 # int | Page number for paged results (optional) if omitted the server will use the default value of 1
-    format = "json" # str | Output format: [JSON|CSV] Json is the default value (optional) if omitted the server will use the default value of "json"
-    env = "prod" # str | Environment.   * `prod` - api.vam.wfp.org   * `dev` - dev.api.vam.wfp.org (optional)
+    api_instance = data_bridges_client.CommodityUnitsApi(api_client)
+    country_code = 'country_code_example' # str | The code to identify the country. It can be a ISO-3166 Alpha 3 code or the VAM internal admin0code. (optional)
+    commodity_id = 0 # int | The exact ID of a Commodity, as found in /Commodities/List (optional) (default to 0)
+    from_unit_id = 0 # int | The exact ID of the original unit of measure of the price of a commodity, as found in /CommodityUnits/List (optional) (default to 0)
+    to_unit_id = 0 # int | The exact ID of the converted unit of measure of the price of a commodity, as found in /CommodityUnits/List (optional) (default to 0)
+    page = 1 # int | Page number for paged results (optional) (default to 1)
+    format = 'json' # str | Output format: [JSON|CSV] Json is the default value (optional) (default to 'json')
+    env = 'env_example' # str | Environment.   * `prod` - api.vam.wfp.org   * `dev` - dev.api.vam.wfp.org (optional)
 
-    # example passing only required values which don't have defaults set
-    # and optional values
     try:
         # Provides conversion factors to Kilogram or Litres for each convertible unit of measure.
         api_response = api_instance.commodity_units_conversion_list_get(country_code=country_code, commodity_id=commodity_id, from_unit_id=from_unit_id, to_unit_id=to_unit_id, page=page, format=format, env=env)
+        print("The response of CommodityUnitsApi->commodity_units_conversion_list_get:\n")
         pprint(api_response)
-    except data_bridges_client.ApiException as e:
+    except Exception as e:
         print("Exception when calling CommodityUnitsApi->commodity_units_conversion_list_get: %s\n" % e)
 ```
 
 
+
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **country_code** | **str**| The code to identify the country. It can be a ISO-3166 Alpha 3 code or the VAM internal admin0code. | [optional]
- **commodity_id** | **int**| The exact ID of a Commodity, as found in /Commodities/List | [optional] if omitted the server will use the default value of 0
- **from_unit_id** | **int**| The exact ID of the original unit of measure of the price of a commodity, as found in /CommodityUnits/List | [optional] if omitted the server will use the default value of 0
- **to_unit_id** | **int**| The exact ID of the converted unit of measure of the price of a commodity, as found in /CommodityUnits/List | [optional] if omitted the server will use the default value of 0
- **page** | **int**| Page number for paged results | [optional] if omitted the server will use the default value of 1
- **format** | **str**| Output format: [JSON|CSV] Json is the default value | [optional] if omitted the server will use the default value of "json"
- **env** | **str**| Environment.   * &#x60;prod&#x60; - api.vam.wfp.org   * &#x60;dev&#x60; - dev.api.vam.wfp.org | [optional]
+ **country_code** | **str**| The code to identify the country. It can be a ISO-3166 Alpha 3 code or the VAM internal admin0code. | [optional] 
+ **commodity_id** | **int**| The exact ID of a Commodity, as found in /Commodities/List | [optional] [default to 0]
+ **from_unit_id** | **int**| The exact ID of the original unit of measure of the price of a commodity, as found in /CommodityUnits/List | [optional] [default to 0]
+ **to_unit_id** | **int**| The exact ID of the converted unit of measure of the price of a commodity, as found in /CommodityUnits/List | [optional] [default to 0]
+ **page** | **int**| Page number for paged results | [optional] [default to 1]
+ **format** | **str**| Output format: [JSON|CSV] Json is the default value | [optional] [default to &#39;json&#39;]
+ **env** | **str**| Environment.   * &#x60;prod&#x60; - api.vam.wfp.org   * &#x60;dev&#x60; - dev.api.vam.wfp.org | [optional] 
 
 ### Return type
 
@@ -89,8 +87,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, text/plain
-
+ - **Accept**: text/plain, application/json, text/json
 
 ### HTTP response details
 
@@ -102,7 +99,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **commodity_units_list_get**
-> PagedCommodityListDTO commodity_units_list_get()
+> PagedCommodityListDTO commodity_units_list_get(country_code=country_code, commodity_unit_name=commodity_unit_name, commodity_unit_id=commodity_unit_id, page=page, format=format, env=env)
 
 Provides the detailed list of the unit of measure available in DataBridges platform
 
@@ -114,15 +111,16 @@ Provides the detailed list of the unit of measure available in DataBridges platf
 
 ```python
 import time
+import os
 import data_bridges_client
-from data_bridges_client.api import commodity_units_api
-from data_bridges_client.model.bad_request_dto import BadRequestDTO
-from data_bridges_client.model.paged_commodity_list_dto import PagedCommodityListDTO
+from data_bridges_client.models.paged_commodity_list_dto import PagedCommodityListDTO
+from data_bridges_client.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/1.3.1
+
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/2.0.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/1.3.1"
+    host = "https://api.wfp.org/vam-data-bridges/2.0.0"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -130,44 +128,41 @@ configuration = data_bridges_client.Configuration(
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
 
-# Configure OAuth2 access token for authorization: default
-configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/1.3.1"
-)
-configuration.access_token = 'YOUR_ACCESS_TOKEN'
+configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
 with data_bridges_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = commodity_units_api.CommodityUnitsApi(api_client)
-    country_code = "countryCode_example" # str | The code to identify the country. It can be a ISO-3166 Alpha 3 code or the VAM internal admin0code (optional)
-    commodity_unit_name = "commodityUnitName_example" # str | The name, even partial and case insensitive, of a commodity unit (optional)
-    commodity_unit_id = 0 # int | The exact ID of a commodity unit (optional) if omitted the server will use the default value of 0
-    page = 1 # int | page number for paged results (optional) if omitted the server will use the default value of 1
-    format = "json" # str | Output format: [JSON|CSV] Json is the default value (optional) if omitted the server will use the default value of "json"
-    env = "prod" # str | Environment.   * `prod` - api.vam.wfp.org   * `dev` - dev.api.vam.wfp.org (optional)
+    api_instance = data_bridges_client.CommodityUnitsApi(api_client)
+    country_code = 'country_code_example' # str | The code to identify the country. It can be a ISO-3166 Alpha 3 code or the VAM internal admin0code (optional)
+    commodity_unit_name = 'commodity_unit_name_example' # str | The name, even partial and case insensitive, of a commodity unit (optional)
+    commodity_unit_id = 0 # int | The exact ID of a commodity unit (optional) (default to 0)
+    page = 1 # int | page number for paged results (optional) (default to 1)
+    format = 'json' # str | Output format: [JSON|CSV] Json is the default value (optional) (default to 'json')
+    env = 'env_example' # str | Environment.   * `prod` - api.vam.wfp.org   * `dev` - dev.api.vam.wfp.org (optional)
 
-    # example passing only required values which don't have defaults set
-    # and optional values
     try:
         # Provides the detailed list of the unit of measure available in DataBridges platform
         api_response = api_instance.commodity_units_list_get(country_code=country_code, commodity_unit_name=commodity_unit_name, commodity_unit_id=commodity_unit_id, page=page, format=format, env=env)
+        print("The response of CommodityUnitsApi->commodity_units_list_get:\n")
         pprint(api_response)
-    except data_bridges_client.ApiException as e:
+    except Exception as e:
         print("Exception when calling CommodityUnitsApi->commodity_units_list_get: %s\n" % e)
 ```
 
 
+
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **country_code** | **str**| The code to identify the country. It can be a ISO-3166 Alpha 3 code or the VAM internal admin0code | [optional]
- **commodity_unit_name** | **str**| The name, even partial and case insensitive, of a commodity unit | [optional]
- **commodity_unit_id** | **int**| The exact ID of a commodity unit | [optional] if omitted the server will use the default value of 0
- **page** | **int**| page number for paged results | [optional] if omitted the server will use the default value of 1
- **format** | **str**| Output format: [JSON|CSV] Json is the default value | [optional] if omitted the server will use the default value of "json"
- **env** | **str**| Environment.   * &#x60;prod&#x60; - api.vam.wfp.org   * &#x60;dev&#x60; - dev.api.vam.wfp.org | [optional]
+ **country_code** | **str**| The code to identify the country. It can be a ISO-3166 Alpha 3 code or the VAM internal admin0code | [optional] 
+ **commodity_unit_name** | **str**| The name, even partial and case insensitive, of a commodity unit | [optional] 
+ **commodity_unit_id** | **int**| The exact ID of a commodity unit | [optional] [default to 0]
+ **page** | **int**| page number for paged results | [optional] [default to 1]
+ **format** | **str**| Output format: [JSON|CSV] Json is the default value | [optional] [default to &#39;json&#39;]
+ **env** | **str**| Environment.   * &#x60;prod&#x60; - api.vam.wfp.org   * &#x60;dev&#x60; - dev.api.vam.wfp.org | [optional] 
 
 ### Return type
 
@@ -180,8 +175,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, text/plain
-
+ - **Accept**: text/plain, application/json, text/json
 
 ### HTTP response details
 
