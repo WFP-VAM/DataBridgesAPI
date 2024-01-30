@@ -1,6 +1,6 @@
 # data_bridges_client.FoodSecurityApi
 
-All URIs are relative to *https://api.wfp.org/vam-data-bridges/1.3.1*
+All URIs are relative to *https://api.wfp.org/vam-data-bridges/2.0.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **food_security_list_get**
-> IpcValuePagedResult food_security_list_get()
+> IpcValuePagedResult food_security_list_get(iso3=iso3, year=year, page=page, env=env)
 
 
 
@@ -20,15 +20,16 @@ Method | HTTP request | Description
 
 ```python
 import time
+import os
 import data_bridges_client
-from data_bridges_client.api import food_security_api
-from data_bridges_client.model.ipc_value_paged_result import IpcValuePagedResult
-from data_bridges_client.model.bad_request_dto import BadRequestDTO
+from data_bridges_client.models.ipc_value_paged_result import IpcValuePagedResult
+from data_bridges_client.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/1.3.1
+
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/2.0.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/1.3.1"
+    host = "https://api.wfp.org/vam-data-bridges/2.0.0"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -36,39 +37,36 @@ configuration = data_bridges_client.Configuration(
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
 
-# Configure OAuth2 access token for authorization: default
-configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/1.3.1"
-)
-configuration.access_token = 'YOUR_ACCESS_TOKEN'
+configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
 with data_bridges_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = food_security_api.FoodSecurityApi(api_client)
-    iso3 = "iso3_example" # str | The country ISO3 code (optional)
-    year = 1 # int |  (optional)
-    page = 1 # int |  (optional) if omitted the server will use the default value of 1
-    env = "prod" # str | Environment.   * `prod` - api.vam.wfp.org   * `dev` - dev.api.vam.wfp.org (optional)
+    api_instance = data_bridges_client.FoodSecurityApi(api_client)
+    iso3 = 'iso3_example' # str | The country ISO3 code (optional)
+    year = 56 # int |  (optional)
+    page = 1 # int |  (optional) (default to 1)
+    env = 'env_example' # str | Environment.   * `prod` - api.vam.wfp.org   * `dev` - dev.api.vam.wfp.org (optional)
 
-    # example passing only required values which don't have defaults set
-    # and optional values
     try:
         api_response = api_instance.food_security_list_get(iso3=iso3, year=year, page=page, env=env)
+        print("The response of FoodSecurityApi->food_security_list_get:\n")
         pprint(api_response)
-    except data_bridges_client.ApiException as e:
+    except Exception as e:
         print("Exception when calling FoodSecurityApi->food_security_list_get: %s\n" % e)
 ```
 
 
+
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **iso3** | **str**| The country ISO3 code | [optional]
- **year** | **int**|  | [optional]
- **page** | **int**|  | [optional] if omitted the server will use the default value of 1
- **env** | **str**| Environment.   * &#x60;prod&#x60; - api.vam.wfp.org   * &#x60;dev&#x60; - dev.api.vam.wfp.org | [optional]
+ **iso3** | **str**| The country ISO3 code | [optional] 
+ **year** | **int**|  | [optional] 
+ **page** | **int**|  | [optional] [default to 1]
+ **env** | **str**| Environment.   * &#x60;prod&#x60; - api.vam.wfp.org   * &#x60;dev&#x60; - dev.api.vam.wfp.org | [optional] 
 
 ### Return type
 
@@ -81,8 +79,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, text/plain
-
+ - **Accept**: text/plain, application/json, text/json
 
 ### HTTP response details
 
