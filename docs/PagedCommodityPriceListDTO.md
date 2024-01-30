@@ -2,13 +2,30 @@
 
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**items** | [**[CommodityPriceDTO], none_type**](CommodityPriceDTO.md) | The list of paged items | [optional] 
-**page** | **int** | The current page | [optional] 
 **total_items** | **int** | The total number of items | [optional] 
-**any string name** | **bool, date, datetime, dict, float, int, list, str, none_type** | any string name can be used but the value must be the correct type | [optional]
+**page** | **int** | The current page | [optional] 
+**items** | [**List[CommodityPriceDTO]**](CommodityPriceDTO.md) | The list of paged items | [optional] 
 
+## Example
+
+```python
+from data_bridges_client.models.paged_commodity_price_list_dto import PagedCommodityPriceListDTO
+
+# TODO update the JSON string below
+json = "{}"
+# create an instance of PagedCommodityPriceListDTO from a JSON string
+paged_commodity_price_list_dto_instance = PagedCommodityPriceListDTO.from_json(json)
+# print the JSON string representation of the object
+print PagedCommodityPriceListDTO.to_json()
+
+# convert the object into a dict
+paged_commodity_price_list_dto_dict = paged_commodity_price_list_dto_instance.to_dict()
+# create an instance of PagedCommodityPriceListDTO from a dict
+paged_commodity_price_list_dto_form_dict = paged_commodity_price_list_dto.from_dict(paged_commodity_price_list_dto_dict)
+```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
 
