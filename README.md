@@ -54,20 +54,19 @@ import time
 import data_bridges_client
 from data_bridges_client.rest import ApiException
 from pprint import pprint
+from data_bridges_client.token import WfpApiToken
 
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/2.0.0
+# Configure OAuth2 access token for authorization: default
+KEY = ''
+SECRET = ''
+token = WfpApiToken(api_key=KEY, api_secret=SECRET)
+
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/1.4.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/2.0.0"
+    host = "https://api.wfp.org/vam-data-bridges/1.4.0"
 )
-
-# The client must configure the authentication and authorization parameters
-# in accordance with the API server security policy.
-# Examples for each auth method are provided below, use the example that
-# satisfies your auth use case.
-
-configuration.access_token = os.environ["ACCESS_TOKEN"]
-
+configuration.access_token = token.refresh()
 
 # Enter a context with an instance of the API client
 with data_bridges_client.ApiClient(configuration) as api_client:
