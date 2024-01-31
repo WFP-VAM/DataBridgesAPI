@@ -35,7 +35,7 @@ class WfpApiToken:
         resp_data = resp.json()
         received_scopes = set(resp_data["scope"].split(" "))
         if not set(scopes).issubset(received_scopes):
-            raise TokenScopeError(f"Could not acquire requested scopes: {scopes}")
+            raise ValueError(f"Could not acquire requested scopes: {scopes}")
         return resp_data["access_token"]
 
     def refresh_urllib3(self, scopes: Optional[str] = None):
