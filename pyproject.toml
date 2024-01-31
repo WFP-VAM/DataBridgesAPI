@@ -30,3 +30,7 @@ dev = ["black", "bumpver", "isort", "pip-tools", "pytest"]
 
 [project.urls]
 Homepage = "https://catalog.api.wfp.org/devportal/apis/be67cddd-0fb8-4461-a91b-6b75f3146568/overview"
+
+[tool.setuptools.packages.find]
+include = ["databridgesapi*"]
+namespaces = false
