@@ -19,9 +19,8 @@ mkdir data_bridges_client
 mv ./token.py data_bridges_client/
 ```
 
-5. Generate the client by running this command from the root of the repository. We pin the version to 5.4.0 as python templates from more recent versions don't seem to work.
+5. Generate the client by running this command from the root of the repository.
 ```
-openapi-generator-cli version-manager set 5.4.0
 openapi-generator-cli generate -g python -i generate/swagger.json -o . --package-name data_bridges_client --git-user-id WFP-VAM --git-repo-id DataBridgesAPI
 ```
 4. Manually revert changes to `setup.py` and `README.md`. These relate to additional functionality we developed to handle the WFP token refresh workflow.
