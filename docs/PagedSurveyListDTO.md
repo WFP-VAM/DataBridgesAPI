@@ -19,12 +19,12 @@ json = "{}"
 # create an instance of PagedSurveyListDTO from a JSON string
 paged_survey_list_dto_instance = PagedSurveyListDTO.from_json(json)
 # print the JSON string representation of the object
-print PagedSurveyListDTO.to_json()
+print(PagedSurveyListDTO.to_json())
 
 # convert the object into a dict
 paged_survey_list_dto_dict = paged_survey_list_dto_instance.to_dict()
 # create an instance of PagedSurveyListDTO from a dict
-paged_survey_list_dto_form_dict = paged_survey_list_dto.from_dict(paged_survey_list_dto_dict)
+paged_survey_list_dto_from_dict = PagedSurveyListDTO.from_dict(paged_survey_list_dto_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

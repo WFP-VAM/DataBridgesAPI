@@ -36,12 +36,12 @@ json = "{}"
 # create an instance of RpmeAssessment from a JSON string
 rpme_assessment_instance = RpmeAssessment.from_json(json)
 # print the JSON string representation of the object
-print RpmeAssessment.to_json()
+print(RpmeAssessment.to_json())
 
 # convert the object into a dict
 rpme_assessment_dict = rpme_assessment_instance.to_dict()
 # create an instance of RpmeAssessment from a dict
-rpme_assessment_form_dict = rpme_assessment.from_dict(rpme_assessment_dict)
+rpme_assessment_from_dict = RpmeAssessment.from_dict(rpme_assessment_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

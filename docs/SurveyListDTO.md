@@ -31,12 +31,12 @@ json = "{}"
 # create an instance of SurveyListDTO from a JSON string
 survey_list_dto_instance = SurveyListDTO.from_json(json)
 # print the JSON string representation of the object
-print SurveyListDTO.to_json()
+print(SurveyListDTO.to_json())
 
 # convert the object into a dict
 survey_list_dto_dict = survey_list_dto_instance.to_dict()
 # create an instance of SurveyListDTO from a dict
-survey_list_dto_form_dict = survey_list_dto.from_dict(survey_list_dto_dict)
+survey_list_dto_from_dict = SurveyListDTO.from_dict(survey_list_dto_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

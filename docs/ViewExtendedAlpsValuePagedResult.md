@@ -19,12 +19,12 @@ json = "{}"
 # create an instance of ViewExtendedAlpsValuePagedResult from a JSON string
 view_extended_alps_value_paged_result_instance = ViewExtendedAlpsValuePagedResult.from_json(json)
 # print the JSON string representation of the object
-print ViewExtendedAlpsValuePagedResult.to_json()
+print(ViewExtendedAlpsValuePagedResult.to_json())
 
 # convert the object into a dict
 view_extended_alps_value_paged_result_dict = view_extended_alps_value_paged_result_instance.to_dict()
 # create an instance of ViewExtendedAlpsValuePagedResult from a dict
-view_extended_alps_value_paged_result_form_dict = view_extended_alps_value_paged_result.from_dict(view_extended_alps_value_paged_result_dict)
+view_extended_alps_value_paged_result_from_dict = ViewExtendedAlpsValuePagedResult.from_dict(view_extended_alps_value_paged_result_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

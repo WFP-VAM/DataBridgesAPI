@@ -25,12 +25,12 @@ json = "{}"
 # create an instance of MarketDTO from a JSON string
 market_dto_instance = MarketDTO.from_json(json)
 # print the JSON string representation of the object
-print MarketDTO.to_json()
+print(MarketDTO.to_json())
 
 # convert the object into a dict
 market_dto_dict = market_dto_instance.to_dict()
 # create an instance of MarketDTO from a dict
-market_dto_form_dict = market_dto.from_dict(market_dto_dict)
+market_dto_from_dict = MarketDTO.from_dict(market_dto_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

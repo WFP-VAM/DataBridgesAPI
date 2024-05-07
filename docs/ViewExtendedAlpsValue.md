@@ -35,12 +35,12 @@ json = "{}"
 # create an instance of ViewExtendedAlpsValue from a JSON string
 view_extended_alps_value_instance = ViewExtendedAlpsValue.from_json(json)
 # print the JSON string representation of the object
-print ViewExtendedAlpsValue.to_json()
+print(ViewExtendedAlpsValue.to_json())
 
 # convert the object into a dict
 view_extended_alps_value_dict = view_extended_alps_value_instance.to_dict()
 # create an instance of ViewExtendedAlpsValue from a dict
-view_extended_alps_value_form_dict = view_extended_alps_value.from_dict(view_extended_alps_value_dict)
+view_extended_alps_value_from_dict = ViewExtendedAlpsValue.from_dict(view_extended_alps_value_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

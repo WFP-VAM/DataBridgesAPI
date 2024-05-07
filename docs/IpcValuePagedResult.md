@@ -19,12 +19,12 @@ json = "{}"
 # create an instance of IpcValuePagedResult from a JSON string
 ipc_value_paged_result_instance = IpcValuePagedResult.from_json(json)
 # print the JSON string representation of the object
-print IpcValuePagedResult.to_json()
+print(IpcValuePagedResult.to_json())
 
 # convert the object into a dict
 ipc_value_paged_result_dict = ipc_value_paged_result_instance.to_dict()
 # create an instance of IpcValuePagedResult from a dict
-ipc_value_paged_result_form_dict = ipc_value_paged_result.from_dict(ipc_value_paged_result_dict)
+ipc_value_paged_result_from_dict = IpcValuePagedResult.from_dict(ipc_value_paged_result_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

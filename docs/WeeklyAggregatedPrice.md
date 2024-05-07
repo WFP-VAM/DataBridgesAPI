@@ -37,12 +37,12 @@ json = "{}"
 # create an instance of WeeklyAggregatedPrice from a JSON string
 weekly_aggregated_price_instance = WeeklyAggregatedPrice.from_json(json)
 # print the JSON string representation of the object
-print WeeklyAggregatedPrice.to_json()
+print(WeeklyAggregatedPrice.to_json())
 
 # convert the object into a dict
 weekly_aggregated_price_dict = weekly_aggregated_price_instance.to_dict()
 # create an instance of WeeklyAggregatedPrice from a dict
-weekly_aggregated_price_form_dict = weekly_aggregated_price.from_dict(weekly_aggregated_price_dict)
+weekly_aggregated_price_from_dict = WeeklyAggregatedPrice.from_dict(weekly_aggregated_price_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
