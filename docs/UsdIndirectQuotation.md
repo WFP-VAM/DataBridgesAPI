@@ -24,12 +24,12 @@ json = "{}"
 # create an instance of UsdIndirectQuotation from a JSON string
 usd_indirect_quotation_instance = UsdIndirectQuotation.from_json(json)
 # print the JSON string representation of the object
-print UsdIndirectQuotation.to_json()
+print(UsdIndirectQuotation.to_json())
 
 # convert the object into a dict
 usd_indirect_quotation_dict = usd_indirect_quotation_instance.to_dict()
 # create an instance of UsdIndirectQuotation from a dict
-usd_indirect_quotation_form_dict = usd_indirect_quotation.from_dict(usd_indirect_quotation_dict)
+usd_indirect_quotation_from_dict = UsdIndirectQuotation.from_dict(usd_indirect_quotation_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

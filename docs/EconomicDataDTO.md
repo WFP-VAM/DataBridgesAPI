@@ -18,12 +18,12 @@ json = "{}"
 # create an instance of EconomicDataDTO from a JSON string
 economic_data_dto_instance = EconomicDataDTO.from_json(json)
 # print the JSON string representation of the object
-print EconomicDataDTO.to_json()
+print(EconomicDataDTO.to_json())
 
 # convert the object into a dict
 economic_data_dto_dict = economic_data_dto_instance.to_dict()
 # create an instance of EconomicDataDTO from a dict
-economic_data_dto_form_dict = economic_data_dto.from_dict(economic_data_dto_dict)
+economic_data_dto_from_dict = EconomicDataDTO.from_dict(economic_data_dto_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -25,12 +25,12 @@ json = "{}"
 # create an instance of GorpValueWithChanges from a JSON string
 gorp_value_with_changes_instance = GorpValueWithChanges.from_json(json)
 # print the JSON string representation of the object
-print GorpValueWithChanges.to_json()
+print(GorpValueWithChanges.to_json())
 
 # convert the object into a dict
 gorp_value_with_changes_dict = gorp_value_with_changes_instance.to_dict()
 # create an instance of GorpValueWithChanges from a dict
-gorp_value_with_changes_form_dict = gorp_value_with_changes.from_dict(gorp_value_with_changes_dict)
+gorp_value_with_changes_from_dict = GorpValueWithChanges.from_dict(gorp_value_with_changes_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

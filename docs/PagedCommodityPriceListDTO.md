@@ -19,12 +19,12 @@ json = "{}"
 # create an instance of PagedCommodityPriceListDTO from a JSON string
 paged_commodity_price_list_dto_instance = PagedCommodityPriceListDTO.from_json(json)
 # print the JSON string representation of the object
-print PagedCommodityPriceListDTO.to_json()
+print(PagedCommodityPriceListDTO.to_json())
 
 # convert the object into a dict
 paged_commodity_price_list_dto_dict = paged_commodity_price_list_dto_instance.to_dict()
 # create an instance of PagedCommodityPriceListDTO from a dict
-paged_commodity_price_list_dto_form_dict = paged_commodity_price_list_dto.from_dict(paged_commodity_price_list_dto_dict)
+paged_commodity_price_list_dto_from_dict = PagedCommodityPriceListDTO.from_dict(paged_commodity_price_list_dto_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

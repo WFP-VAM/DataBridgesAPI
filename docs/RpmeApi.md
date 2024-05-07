@@ -1,6 +1,6 @@
 # data_bridges_client.RpmeApi
 
-All URIs are relative to *https://api.wfp.org/vam-data-bridges/2.0.0*
+All URIs are relative to *https://api.wfp.org/vam-data-bridges/4.0.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -13,28 +13,26 @@ Method | HTTP request | Description
 
 
 # **rpme_base_data_get**
-> PagedSurveyResponsesDTO rpme_base_data_get(survey_id=survey_id, page=page, env=env)
+> PagedSurveyResponsesDTO rpme_base_data_get(survey_id=survey_id, page=page, page_size=page_size, env=env)
 
 Get data that includes the core RPME fields only by Survey ID
 
-  [![Generic badge](https://img.shields.io/badge/Maturity%20Level-Production%20Ready-green)]()  [![Generic badge](https://img.shields.io/badge/Access%20Policy-Open-green)]()  [![Generic badge](https://img.shields.io/badge/Data%20Classification-Public-green)]()      **Data Controller** - Wael Attia  **API Integration Pattern** - This endpoint uses [Hey Jude](https://docs.api.wfp.org/providers/#api-patterns) pattern
+  [![Generic badge](https://img.shields.io/badge/Maturity%20Level-Production%20Ready-green)]()  [![Generic badge](https://img.shields.io/badge/Access_Policy-Approval_Required-yellow)]()  [![Generic badge](https://img.shields.io/badge/Data%20Classification-Public-green)]()  ### This endpoint is restricted, it requires the scope: \"vamdatabridges_rpme-basedata_get\"      **Data Controller** - Wael Attia  **API Integration Pattern** - This endpoint uses [Hey Jude](https://docs.api.wfp.org/providers/#api-patterns) pattern
 
 ### Example
 
 * OAuth Authentication (default):
 
 ```python
-import time
-import os
 import data_bridges_client
 from data_bridges_client.models.paged_survey_responses_dto import PagedSurveyResponsesDTO
 from data_bridges_client.rest import ApiException
 from pprint import pprint
 
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/2.0.0
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/4.0.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/2.0.0"
+    host = "https://api.wfp.org/vam-data-bridges/4.0.0"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -50,11 +48,12 @@ with data_bridges_client.ApiClient(configuration) as api_client:
     api_instance = data_bridges_client.RpmeApi(api_client)
     survey_id = 56 # int | unique identifier for the collected data, as retrieved from /Surveys API. (optional)
     page = 1 # int | page number for paged results (optional) (default to 1)
+    page_size = 20 # int | page size for paged results, default value is 20. (optional) (default to 20)
     env = 'env_example' # str | Environment.   * `prod` - api.vam.wfp.org   * `dev` - dev.api.vam.wfp.org (optional)
 
     try:
         # Get data that includes the core RPME fields only by Survey ID
-        api_response = api_instance.rpme_base_data_get(survey_id=survey_id, page=page, env=env)
+        api_response = api_instance.rpme_base_data_get(survey_id=survey_id, page=page, page_size=page_size, env=env)
         print("The response of RpmeApi->rpme_base_data_get:\n")
         pprint(api_response)
     except Exception as e:
@@ -70,6 +69,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **survey_id** | **int**| unique identifier for the collected data, as retrieved from /Surveys API. | [optional] 
  **page** | **int**| page number for paged results | [optional] [default to 1]
+ **page_size** | **int**| page size for paged results, default value is 20. | [optional] [default to 20]
  **env** | **str**| Environment.   * &#x60;prod&#x60; - api.vam.wfp.org   * &#x60;dev&#x60; - dev.api.vam.wfp.org | [optional] 
 
 ### Return type
@@ -96,7 +96,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **rpme_full_data_get**
-> PagedSurveyResponsesDTO rpme_full_data_get(survey_id=survey_id, format=format, page=page, env=env)
+> PagedSurveyResponsesDTO rpme_full_data_get(survey_id=survey_id, format=format, page=page, page_size=page_size, env=env)
 
 Get a full dataset that includes all the fields included in the survey in addition to the core RPME fields by Survey ID.
 
@@ -107,17 +107,15 @@ Get a full dataset that includes all the fields included in the survey in additi
 * OAuth Authentication (default):
 
 ```python
-import time
-import os
 import data_bridges_client
 from data_bridges_client.models.paged_survey_responses_dto import PagedSurveyResponsesDTO
 from data_bridges_client.rest import ApiException
 from pprint import pprint
 
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/2.0.0
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/4.0.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/2.0.0"
+    host = "https://api.wfp.org/vam-data-bridges/4.0.0"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -134,11 +132,12 @@ with data_bridges_client.ApiClient(configuration) as api_client:
     survey_id = 56 # int | unique identifier for the collected data, as retrieved from /Surveys API. (optional)
     format = 'json' # str | Output format: [JSON|CSV] Json is the default value (optional) (default to 'json')
     page = 1 # int | page number for paged results (optional) (default to 1)
+    page_size = 20 # int | page size for paged results, default value is 20. (optional) (default to 20)
     env = 'env_example' # str | Environment.   * `prod` - api.vam.wfp.org   * `dev` - dev.api.vam.wfp.org (optional)
 
     try:
         # Get a full dataset that includes all the fields included in the survey in addition to the core RPME fields by Survey ID.
-        api_response = api_instance.rpme_full_data_get(survey_id=survey_id, format=format, page=page, env=env)
+        api_response = api_instance.rpme_full_data_get(survey_id=survey_id, format=format, page=page, page_size=page_size, env=env)
         print("The response of RpmeApi->rpme_full_data_get:\n")
         pprint(api_response)
     except Exception as e:
@@ -155,6 +154,7 @@ Name | Type | Description  | Notes
  **survey_id** | **int**| unique identifier for the collected data, as retrieved from /Surveys API. | [optional] 
  **format** | **str**| Output format: [JSON|CSV] Json is the default value | [optional] [default to &#39;json&#39;]
  **page** | **int**| page number for paged results | [optional] [default to 1]
+ **page_size** | **int**| page size for paged results, default value is 20. | [optional] [default to 20]
  **env** | **str**| Environment.   * &#x60;prod&#x60; - api.vam.wfp.org   * &#x60;dev&#x60; - dev.api.vam.wfp.org | [optional] 
 
 ### Return type
@@ -185,24 +185,22 @@ Name | Type | Description  | Notes
 
 Processed values for each variable used in the assessments
 
-  [![Generic badge](https://img.shields.io/badge/Maturity%20Level-Production%20Ready-green)]()  [![Generic badge](https://img.shields.io/badge/Access%20Policy-Open-green)]()  [![Generic badge](https://img.shields.io/badge/Data%20Classification-Public-green)]()      **Data Controller** - Wael Attia  **API Integration Pattern** - This endpoint uses [Hey Jude](https://docs.api.wfp.org/providers/#api-patterns) pattern
+  [![Generic badge](https://img.shields.io/badge/Maturity%20Level-Production%20Ready-green)]()  [![Generic badge](https://img.shields.io/badge/Access_Policy-Approval_Required-yellow)]()  [![Generic badge](https://img.shields.io/badge/Data%20Classification-Public-green)]()  ### This endpoint is restricted, it requires the scope: \"vamdatabridges_rpme-outputvalues_get\"      **Data Controller** - Wael Attia  **API Integration Pattern** - This endpoint uses [Hey Jude](https://docs.api.wfp.org/providers/#api-patterns) pattern
 
 ### Example
 
 * OAuth Authentication (default):
 
 ```python
-import time
-import os
 import data_bridges_client
 from data_bridges_client.models.rpme_assessment_paged_result import RpmeAssessmentPagedResult
 from data_bridges_client.rest import ApiException
 from pprint import pprint
 
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/2.0.0
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/4.0.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/2.0.0"
+    host = "https://api.wfp.org/vam-data-bridges/4.0.0"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -275,24 +273,22 @@ Name | Type | Description  | Notes
 
 Retrieve 1) Survey IDs, 2) their corresponding XLS Form IDs, and 3) Base XLS Form of all RPME surveys conducted in a country. The date of reference, SurveyDate, for the data collection is set by the officer responsible for the upload of each survey.
 
-  [![Generic badge](https://img.shields.io/badge/Maturity%20Level-Production%20Ready-green)]()  [![Generic badge](https://img.shields.io/badge/Access%20Policy-Open-green)]()  [![Generic badge](https://img.shields.io/badge/Data%20Classification-Public-green)]()      **Data Controller** - Wael Attia  **API Integration Pattern** - This endpoint uses [Hey Jude](https://docs.api.wfp.org/providers/#api-patterns) pattern
+  [![Generic badge](https://img.shields.io/badge/Maturity%20Level-Production%20Ready-green)]()  [![Generic badge](https://img.shields.io/badge/Access_Policy-Approval_Required-yellow)]()  [![Generic badge](https://img.shields.io/badge/Data%20Classification-Public-green)]()  ### This endpoint is restricted, it requires the scope: \"vamdatabridges_rpme-surveys_get\"      **Data Controller** - Wael Attia  **API Integration Pattern** - This endpoint uses [Hey Jude](https://docs.api.wfp.org/providers/#api-patterns) pattern
 
 ### Example
 
 * OAuth Authentication (default):
 
 ```python
-import time
-import os
 import data_bridges_client
 from data_bridges_client.models.paged_survey_list_dto import PagedSurveyListDTO
 from data_bridges_client.rest import ApiException
 from pprint import pprint
 
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/2.0.0
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/4.0.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/2.0.0"
+    host = "https://api.wfp.org/vam-data-bridges/4.0.0"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -361,24 +357,22 @@ Name | Type | Description  | Notes
 
 List of variables
 
-  [![Generic badge](https://img.shields.io/badge/Maturity%20Level-Production%20Ready-green)]()  [![Generic badge](https://img.shields.io/badge/Access%20Policy-Open-green)]()  [![Generic badge](https://img.shields.io/badge/Data%20Classification-Public-green)]()      **Data Controller** - Wael Attia  **API Integration Pattern** - This endpoint uses [Hey Jude](https://docs.api.wfp.org/providers/#api-patterns) pattern
+  [![Generic badge](https://img.shields.io/badge/Maturity%20Level-Production%20Ready-green)]()  [![Generic badge](https://img.shields.io/badge/Access_Policy-Approval_Required-yellow)]()  [![Generic badge](https://img.shields.io/badge/Data%20Classification-Public-green)]()  ### This endpoint is restricted, it requires the scope: \"vamdatabridges_rpme-variables_get\"      **Data Controller** - Wael Attia  **API Integration Pattern** - This endpoint uses [Hey Jude](https://docs.api.wfp.org/providers/#api-patterns) pattern
 
 ### Example
 
 * OAuth Authentication (default):
 
 ```python
-import time
-import os
 import data_bridges_client
 from data_bridges_client.models.rpme_variable_paged_result import RpmeVariablePagedResult
 from data_bridges_client.rest import ApiException
 from pprint import pprint
 
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/2.0.0
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/4.0.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/2.0.0"
+    host = "https://api.wfp.org/vam-data-bridges/4.0.0"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -441,24 +435,22 @@ Name | Type | Description  | Notes
 
 Get a complete list of XLS Forms uploaded on the RPME in a given period of data collection. This is the digital version of the questionnaire used during the data collection exercise.
 
-  [![Generic badge](https://img.shields.io/badge/Maturity%20Level-Production%20Ready-green)]()  [![Generic badge](https://img.shields.io/badge/Access%20Policy-Open-green)]()  [![Generic badge](https://img.shields.io/badge/Data%20Classification-Public-green)]()      **Data Controller** - Wael Attia  **API Integration Pattern** - This endpoint uses [Hey Jude](https://docs.api.wfp.org/providers/#api-patterns) pattern
+  [![Generic badge](https://img.shields.io/badge/Maturity%20Level-Production%20Ready-green)]()  [![Generic badge](https://img.shields.io/badge/Access_Policy-Approval_Required-yellow)]()  [![Generic badge](https://img.shields.io/badge/Data%20Classification-Public-green)]()  ### This endpoint is restricted, it requires the scope: \"vamdatabridges_rpme-xlsforms_get\"      **Data Controller** - Wael Attia  **API Integration Pattern** - This endpoint uses [Hey Jude](https://docs.api.wfp.org/providers/#api-patterns) pattern
 
 ### Example
 
 * OAuth Authentication (default):
 
 ```python
-import time
-import os
 import data_bridges_client
 from data_bridges_client.models.paged_xls_form_list_dto import PagedXlsFormListDTO
 from data_bridges_client.rest import ApiException
 from pprint import pprint
 
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/2.0.0
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/4.0.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/2.0.0"
+    host = "https://api.wfp.org/vam-data-bridges/4.0.0"
 )
 
 # The client must configure the authentication and authorization parameters

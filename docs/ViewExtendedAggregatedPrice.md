@@ -38,12 +38,12 @@ json = "{}"
 # create an instance of ViewExtendedAggregatedPrice from a JSON string
 view_extended_aggregated_price_instance = ViewExtendedAggregatedPrice.from_json(json)
 # print the JSON string representation of the object
-print ViewExtendedAggregatedPrice.to_json()
+print(ViewExtendedAggregatedPrice.to_json())
 
 # convert the object into a dict
 view_extended_aggregated_price_dict = view_extended_aggregated_price_instance.to_dict()
 # create an instance of ViewExtendedAggregatedPrice from a dict
-view_extended_aggregated_price_form_dict = view_extended_aggregated_price.from_dict(view_extended_aggregated_price_dict)
+view_extended_aggregated_price_from_dict = ViewExtendedAggregatedPrice.from_dict(view_extended_aggregated_price_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
