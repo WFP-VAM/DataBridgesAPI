@@ -1,6 +1,6 @@
 # data_bridges_client.CommodityUnitsApi
 
-All URIs are relative to *https://api.wfp.org/vam-data-bridges/2.0.0*
+All URIs are relative to *https://api.wfp.org/vam-data-bridges/4.0.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -13,24 +13,22 @@ Method | HTTP request | Description
 
 Provides conversion factors to Kilogram or Litres for each convertible unit of measure.
 
-  [![Generic badge](https://img.shields.io/badge/Maturity%20Level-Production%20Ready-green)]()  [![Generic badge](https://img.shields.io/badge/Access%20Policy-Open-green)]()  [![Generic badge](https://img.shields.io/badge/Data%20Classification-Public-green)]()  Some non-standard units of measure might have different a conversion factor based on the country [Adm0Code]; Other non-standard units of measure might have a different conversion factor based on the commodity [CommodityID] being measured. Other cases will have null adm0code and CommodityID. No mandatory parameter.    **Data Controller** - Wael Attia  **API Integration Pattern** - This endpoint uses [Hey Jude](https://docs.api.wfp.org/providers/#api-patterns) pattern
+  [![Generic badge](https://img.shields.io/badge/Maturity%20Level-Production%20Ready-green)]()  [![Generic badge](https://img.shields.io/badge/Access_Policy-Approval_Required-yellow)]()  [![Generic badge](https://img.shields.io/badge/Data%20Classification-Public-green)]()  ### This endpoint is restricted, it requires the scope: \"vamdatabridges_commodityunits-conversion-list_get\"  Some non-standard units of measure might have different a conversion factor based on the country [Adm0Code]; Other non-standard units of measure might have a different conversion factor based on the commodity [CommodityID] being measured. Other cases will have null adm0code and CommodityID. No mandatory parameter.    **Data Controller** - Wael Attia  **API Integration Pattern** - This endpoint uses [Hey Jude](https://docs.api.wfp.org/providers/#api-patterns) pattern
 
 ### Example
 
 * OAuth Authentication (default):
 
 ```python
-import time
-import os
 import data_bridges_client
 from data_bridges_client.models.paged_commodity_list_dto import PagedCommodityListDTO
 from data_bridges_client.rest import ApiException
 from pprint import pprint
 
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/2.0.0
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/4.0.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/2.0.0"
+    host = "https://api.wfp.org/vam-data-bridges/4.0.0"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -103,24 +101,22 @@ Name | Type | Description  | Notes
 
 Provides the detailed list of the unit of measure available in DataBridges platform
 
-  [![Generic badge](https://img.shields.io/badge/Maturity%20Level-Production%20Ready-green)]()  [![Generic badge](https://img.shields.io/badge/Access%20Policy-Open-green)]()  [![Generic badge](https://img.shields.io/badge/Data%20Classification-Public-green)]()      **Data Controller** - Wael Attia  **API Integration Pattern** - This endpoint uses [Hey Jude](https://docs.api.wfp.org/providers/#api-patterns) pattern
+  [![Generic badge](https://img.shields.io/badge/Maturity%20Level-Production%20Ready-green)]()  [![Generic badge](https://img.shields.io/badge/Access_Policy-Approval_Required-yellow)]()  [![Generic badge](https://img.shields.io/badge/Data%20Classification-Public-green)]()  ### This endpoint is restricted, it requires the scope: \"vamdatabridges_commodityunits-list_get\"      **Data Controller** - Wael Attia  **API Integration Pattern** - This endpoint uses [Hey Jude](https://docs.api.wfp.org/providers/#api-patterns) pattern
 
 ### Example
 
 * OAuth Authentication (default):
 
 ```python
-import time
-import os
 import data_bridges_client
 from data_bridges_client.models.paged_commodity_list_dto import PagedCommodityListDTO
 from data_bridges_client.rest import ApiException
 from pprint import pprint
 
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/2.0.0
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/4.0.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/2.0.0"
+    host = "https://api.wfp.org/vam-data-bridges/4.0.0"
 )
 
 # The client must configure the authentication and authorization parameters
