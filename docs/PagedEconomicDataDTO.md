@@ -22,12 +22,12 @@ json = "{}"
 # create an instance of PagedEconomicDataDTO from a JSON string
 paged_economic_data_dto_instance = PagedEconomicDataDTO.from_json(json)
 # print the JSON string representation of the object
-print PagedEconomicDataDTO.to_json()
+print(PagedEconomicDataDTO.to_json())
 
 # convert the object into a dict
 paged_economic_data_dto_dict = paged_economic_data_dto_instance.to_dict()
 # create an instance of PagedEconomicDataDTO from a dict
-paged_economic_data_dto_form_dict = paged_economic_data_dto.from_dict(paged_economic_data_dto_dict)
+paged_economic_data_dto_from_dict = PagedEconomicDataDTO.from_dict(paged_economic_data_dto_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

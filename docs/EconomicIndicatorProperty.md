@@ -24,12 +24,12 @@ json = "{}"
 # create an instance of EconomicIndicatorProperty from a JSON string
 economic_indicator_property_instance = EconomicIndicatorProperty.from_json(json)
 # print the JSON string representation of the object
-print EconomicIndicatorProperty.to_json()
+print(EconomicIndicatorProperty.to_json())
 
 # convert the object into a dict
 economic_indicator_property_dict = economic_indicator_property_instance.to_dict()
 # create an instance of EconomicIndicatorProperty from a dict
-economic_indicator_property_form_dict = economic_indicator_property.from_dict(economic_indicator_property_dict)
+economic_indicator_property_from_dict = EconomicIndicatorProperty.from_dict(economic_indicator_property_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
