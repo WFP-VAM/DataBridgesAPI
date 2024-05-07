@@ -14,7 +14,7 @@ Every time
 
 ```
 mv data_bridges_client/token.py .
-rm -rf tests docs data_bridges_client
+rm -rf test docs data_bridges_client
 mkdir data_bridges_client
 mv ./token.py data_bridges_client/
 ```
