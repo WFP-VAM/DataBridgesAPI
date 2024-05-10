@@ -7,7 +7,8 @@ import yaml
 import os
 from datetime import timedelta
 from datetime import date
-import pandas
+import pandas as pd
+
 
 
 def setup_configuration_and_authentication(yamlpath):
@@ -34,7 +35,17 @@ def setup_configuration_and_authentication(yamlpath):
 
 
 def shapes_get_survey(surveyid, yamlpath, access_type, page_size=200):
-    """Retrieves survey data using the specified configuration and access type."""
+    """Retrieves survey data using the specified configuration and access type.
+    
+    Args:
+        surveyid (str): The ID of the survey to retrieve.
+        yamlpath (str): The path to the YAML configuration file.
+        access_type (str): The type of access to use for retrieving the survey data. Can be one of '', 'full', 'draft', 'official', or 'public'.
+        page_size (int, optional): The number of items to retrieve per page. Defaults to 200.
+    
+    Returns:
+        pandas.DataFrame: A DataFrame containing the retrieved survey data.
+    """
 
     configuration = setup_configuration_and_authentication(yamlpath)
 
@@ -71,11 +82,23 @@ def shapes_get_survey(surveyid, yamlpath, access_type, page_size=200):
             except ApiException as e:
                 print("Exception when calling Household data->" % access_type % ": %s\n" % e)
 
-    responses = pandas.DataFrame(responses)
-    return responses
+    df = pd.DataFrame(responses)
+    return df
 
 
 def shapes_get_prices(country_iso3, yamlpath, survey_date, page_size=1000):
+    """
+    Fetches market price data for a given country and survey date.
+
+    Args:
+        country_iso3 (str): The ISO 3-letter country code.
+        yamlpath (str): The path to the YAML configuration file.
+        survey_date (str): The survey date in ISO format (e.g. '2022-01-01'). If an empty string is provided, the function will fetch data starting from January 1, 1990.
+        page_size (int, optional): The number of items to fetch per page. Defaults to 1000.
+
+    Returns:
+        pandas.DataFrame: A DataFrame containing the fetched market price data.
+    """
 
     configuration = setup_configuration_and_authentication(yamlpath)
 
@@ -113,11 +136,22 @@ def shapes_get_prices(country_iso3, yamlpath, survey_date, page_size=1000):
                 time.sleep(1)
             except ApiException as e:
                 print("Exception when calling Market price data->market_prices_price_monthly_get: %s\n" % e)
-    responses = pandas.DataFrame(responses)
-    return responses
+    df = pd.DataFrame(responses)
+    return df
 
 
 def shapes_get_exchangerates(country_iso3, yamlpath, page_size=1000):
+    """
+    Retrieves exchange rates for a given country ISO3 code from the Data Bridges API.
+
+    Args:
+        country_iso3 (str): The ISO3 country code for which to retrieve exchange rates.
+        yamlpath (str): The path to the YAML configuration file containing the API credentials.
+        page_size (int, optional): The number of items to retrieve per page. Defaults to 1000.
+
+    Returns:
+        pandas.DataFrame: A DataFrame containing the exchange rate data.
+    """
 
     configuration = setup_configuration_and_authentication(yamlpath)
 
@@ -151,5 +185,8 @@ def shapes_get_exchangerates(country_iso3, yamlpath, page_size=1000):
                 time.sleep(1)
             except ApiException as e:
                 print("Exception when calling Exchange rates data->household_full_data_get: %s\n" % e)
-    responses = pandas.DataFrame(responses)
-    return responses
+    df = pd.DataFrame(responses)
+    return df
+
+if __name__ == "__main__":
+    pass

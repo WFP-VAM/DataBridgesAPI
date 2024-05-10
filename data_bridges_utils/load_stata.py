@@ -2,18 +2,26 @@ import stata_setup
 stata_setup.config('C:/Program Files/Stata18', 'se')
 from sfi import Data, Macro,  SFIToolkit, Frame, Datetime as dt
 
-def load_stata(function):
-    responses = function
-    colnames = responses.columns
-    Data.setObsTotal(len(responses))
+def load_stata(df):
+    """
+    Loads a Pandas DataFrame into a Stata data file format.
+    
+    Args:
+        df (pandas.DataFrame): The DataFrame to be loaded into Stata format.
+    
+    Returns:
+        pandas.DataFrame: The original DataFrame.
+    """
+    colnames = df.columns
+    Data.setObsTotal(len(df))
     for i in range(len(colnames)):
-        dtype = responses.dtypes[i].name
+        dtype = df.dtypes[i].name
         print(dtype)
         # make a valid Stata variable name
         varname = SFIToolkit.makeVarName(colnames[i], retainCase=True)
         print(colnames[i])
         # varname = colnames[i]
-        varval = responses[colnames[i]].values.tolist()
+        varval = df[colnames[i]].values.tolist()
         if dtype == "int64":
             Data.addVarInt(varname)
             Data.store(varname, None, varval)
@@ -25,7 +33,7 @@ def load_stata(function):
             Data.store(varname, None, varval)
         elif dtype == "datetime64[ns]":
             Data.addVarFloat(varname)
-            price_dt_py = [dt.getSIF(j, '%tdCCYY-NN-DD') for j in responses[colnames[i]]]
+            price_dt_py = [dt.getSIF(j, '%tdCCYY-NN-DD') for j in df[colnames[i]]]
             Data.store(varname, None, price_dt_py)
             Data.setVarFormat(varname, '%tdCCYY-NN-DD')
         else:
@@ -33,4 +41,8 @@ def load_stata(function):
             Data.addVarStr(varname, 1)
             s = [str(i) for i in varval]
             Data.store(varname, None, s)
-    return responses
+    return df
+
+
+if __name__ == "__main__":
+    pass
