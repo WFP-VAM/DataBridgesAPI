@@ -16,7 +16,7 @@ def setup_configuration_and_authentication(yamlpath):
 
     with open(yamlpath, "r") as yamlfile:
         databridges_config = yaml.load(yamlfile, Loader=yaml.FullLoader)
-        print("Read successful")
+        # print("Read successful")
 
     key = databridges_config['KEY']
     secret = databridges_config['SECRET']
@@ -70,8 +70,9 @@ def shapes_get_survey(surveyid, yamlpath, access_type, page_size=200):
                     'official': api_instance.household_official_use_base_data_get,
                     'public': api_instance.household_public_base_data_get
                 }.get(access_type)(survey_id=surveyid, page=page, env=env)
-                print("Fetching page %s" % page)
-                print("items - %s" % str(len(api_survey.items)))
+                print(f"Fetching page {page}")
+                print(f"Items: {len(api_survey.items)}")))
+                print("\n ---- \n")
                 responses.extend(
                     [item for item in api_survey.items]
                 )
