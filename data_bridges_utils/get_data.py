@@ -84,7 +84,8 @@ class DataBridgesShapes:
                     time.sleep(1)
 
                 except ApiException as e:
-                    print("Exception when calling Household data->" % access_type % ": %s\n" % e)
+                    print(f"Exception when calling Household data-> {access_type}{e}\n")
+                    exit()
 
         df = pd.DataFrame(responses)
         return df
@@ -135,6 +136,7 @@ class DataBridgesShapes:
                     time.sleep(1)
                 except ApiException as e:
                     print("Exception when calling Market price data->market_prices_price_monthly_get: %s\n" % e)
+                    exit()
         df = pd.DataFrame(responses)
         return df
 
@@ -180,6 +182,7 @@ class DataBridgesShapes:
                     time.sleep(1)
                 except ApiException as e:
                     print("Exception when calling Exchange rates data->household_full_data_get: %s\n" % e)
+                    exit()
         df = pd.DataFrame(responses)
         return df
 
