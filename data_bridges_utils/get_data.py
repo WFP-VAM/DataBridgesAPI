@@ -17,7 +17,7 @@ class DataBridgesShapes:
         return f"DataBridgesShapes(yamlpath='{self.configuration.host}')"
 
     def __str__(self):
-        return f"Brought you by... SHAPES"
+        return f"DataBridgesShapes(yamlpath='{self.configuration.host}') \n\n Brought to you with <3 by SHAPES \n\n"
 
     def setup_configuration_and_authentication(self, yaml_config_path):
         """Loads configuration from a YAML file and sets up authentication."""

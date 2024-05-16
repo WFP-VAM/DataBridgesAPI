@@ -14,7 +14,9 @@ print(client)
 survey_data = client.get_household_survey(3329, 'full')
 print(survey_data.head())
 
-# price_data = client.get_prices("country_iso3", "survey_date")
+# bug
+price_data = client.get_prices("country_iso3", "survey_date")
+print(price_data)
 # exchange_rates = client.get_exchangerates("country_iso3")
 
 # TODO: other API calls, including GORP and IPC
