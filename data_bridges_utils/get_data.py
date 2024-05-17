@@ -8,6 +8,9 @@ import os
 from datetime import timedelta
 from datetime import date
 import pandas as pd
+import logging
+
+logger = logging.getLogger(__name__)
 
 class DataBridgesShapes:
     def __init__(self, yaml_config_path):
@@ -31,7 +34,8 @@ class DataBridgesShapes:
         version = databridges_config['VERSION']
         uri = "https://api.wfp.org/vam-data-bridges/"
         host = str(uri + version)
-        print(host)
+
+        logger.info("DataBridges API: %s", host)
 
         token = WfpApiToken(api_key=key, api_secret=secret)
         configuration = data_bridges_client.Configuration(
@@ -73,9 +77,8 @@ class DataBridgesShapes:
                         'official': api_instance.household_official_use_base_data_get,
                         'public': api_instance.household_public_base_data_get
                     }.get(access_type)(survey_id=survey_id, page=page, env=env)
-                    print(f"Fetching page {page}")
-                    print(f"Items: {len(api_survey.items)}")
-                    print("\n ---- \n")
+                    logger.info(f"Fetching page {page}")
+                    logger.info(f"Items: {len(api_survey.items)}")
                     responses.extend(
                         [item for item in api_survey.items]
                     )
@@ -84,7 +87,7 @@ class DataBridgesShapes:
                     time.sleep(1)
 
                 except ApiException as e:
-                    print(f"Exception when calling Household data-> {access_type}{e}\n")
+                    logger.error(f"Exception when calling Household data-> {access_type}{e}\n")
                     exit()
 
         df = pd.DataFrame(responses)
@@ -131,16 +134,16 @@ class DataBridgesShapes:
                         [item.to_dict() for item in api_prices.items]
                     )
                     total_items = api_prices.total_items
-                    print("Fetching page %s" % page)
+                    logger.info("Fetching page %s" % page)
                     max_item = page * page_size
                     time.sleep(1)
                 except ApiException as e:
-                    print("Exception when calling Market price data->market_prices_price_monthly_get: %s\n" % e)
+                    logger.error("Exception when calling Market price data->market_prices_price_monthly_get: %s\n" % e)
                     exit()
         df = pd.DataFrame(responses)
         return df
 
-    def get_exchangerates(self, country_iso3, page_size=1000):
+    def get_exchange_rates(self, country_iso3, page_size=1000):
         """
         Retrieves exchange rates for a given country ISO3 code from the Data Bridges API.
 
@@ -177,11 +180,11 @@ class DataBridgesShapes:
                         [item.to_dict() for item in api_exchange_rates.items]
                     )
                     total_items = api_exchange_rates.total_items
-                    print("Fetching page %s" % page)
+                    logger.info("Fetching page %s" % page)
                     max_item = page * page_size
                     time.sleep(1)
                 except ApiException as e:
-                    print("Exception when calling Exchange rates data->household_full_data_get: %s\n" % e)
+                    logger.error("Exception when calling Exchange rates data->household_full_data_get: %s\n" % e)
                     exit()
         df = pd.DataFrame(responses)
         return df
@@ -214,19 +217,13 @@ class DataBridgesShapes:
                         [item.to_dict() for item in api_food_security.items]
                     )
                     total_items = api_food_security.total_items
-                    print("Fetching page %s" % page)
+                    logger.info("Fetching page %s" % page)
                     max_item = page * page_size
                     time.sleep(1)
                 except ApiException as e:
-                    print("Exception when calling Food security data->food_security_list_get: %s\n" % e)
+                    logger.error("Exception when calling Food security data->food_security_list_get: %s\n" % e)
         df = pd.DataFrame(responses)
         return df
-        
-
-    
-
-
-
 
 if __name__ == "__main__":
     pass
