@@ -6,9 +6,6 @@ try:
 except OSError:
     print("Stata executable not found. Please install Stata and add it to your PATH.")
 
-def test_load_stata(df):
-    print(df.head())
-
 def load_stata(df):
     """
     Loads a Pandas DataFrame into a Stata data file format.
