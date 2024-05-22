@@ -19,5 +19,3 @@ print(survey_data.head())
 # TODO: other API calls, including GORP and IPC
 # food_sec = client.get_ipc_equivalent("AFG", 2023)
 # print(food_sec.head())
-
-
