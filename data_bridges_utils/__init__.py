@@ -5,6 +5,6 @@ Wrapper for DataBridges client, making it easier to load data in Python, R and S
 """
 
 from .get_data import DataBridgesShapes
-from .load_stata import load_stata
+from .load_stata import DataBridgesStata
 
 __all__ = ['DataBridgesShapes', 'load_stata']
