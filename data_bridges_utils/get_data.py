@@ -3,7 +3,6 @@ import logging
 from datetime import timedelta, date
 import pandas as pd
 import yaml
-
 from data_bridges_client.rest import ApiException
 from data_bridges_client.token import WfpApiToken
 import data_bridges_client
