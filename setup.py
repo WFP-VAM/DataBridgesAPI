@@ -30,7 +30,10 @@ REQUIRES = [
     "python-dateutil",
     "pydantic >= 2",
     "typing-extensions >= 4.7.1",
-    "PyYAML"
+    "PyYAML", 
+    "pandas >= 2.2",
+    "pystata >=0.0.1",
+    "stata-setup >=0.1.3",
 ]
 
 setup(
