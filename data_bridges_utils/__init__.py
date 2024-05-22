@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 """
 Wrapper for DataBridges client, making it easier to load data in Python, R and STATA.
 """
