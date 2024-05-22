@@ -15,7 +15,7 @@
 """  # noqa: E501
 
 
-__version__ = "1.0.0"
+__version__ = "4.1.0"
 
 # import apis into sdk package
 from data_bridges_client.api.commodities_api import CommoditiesApi
