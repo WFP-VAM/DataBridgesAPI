@@ -1,5 +1,6 @@
 # data_bridges_client.GorpApi
 
+<<<<<<< HEAD
 All URIs are relative to *https://api.wfp.org/vam-data-bridges/4.1.0*
 
 Method | HTTP request | Description
@@ -163,12 +164,26 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+=======
+All URIs are relative to *https://api.wfp.org/vam-data-bridges/4.0.0*
+
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**gorp_latest_get**](GorpApi.md#gorp_latest_get) | **GET** /Gorp/Latest | Return the latest dataset of number of acutely food insecure (in millions)  based on WFP Global Operational Response Plan.
+[**gorp_list_get**](GorpApi.md#gorp_list_get) | **GET** /Gorp/List | Return the full dataset of number of acutely food insecure (in millions) based on WFP Global Operational Response Plan.
+
+
+>>>>>>> dev
 # **gorp_latest_get**
 > GorpValueWithChangesPagedResult gorp_latest_get(page=page, env=env)
 
 Return the latest dataset of number of acutely food insecure (in millions)  based on WFP Global Operational Response Plan.
 
+<<<<<<< HEAD
   [![Generic badge](https://img.shields.io/badge/Maturity%20Level-Production%20Ready-green)]()  [![Generic badge](https://img.shields.io/badge/Access_Policy-TEC_Architecture_approval_required-yellow)]()  [![Generic badge](https://img.shields.io/badge/Data%20Classification-Public-green)]()  ### This endpoint is restricted, it requires the scope: \"vamdatabridges_gorp-latest_get\"      **Data Controller** - Wael ATTIA  **API Integration Pattern** - This endpoint uses [Hey Jude](https://docs.api.wfp.org/providers/#api-patterns) pattern
+=======
+  [![Generic badge](https://img.shields.io/badge/Maturity%20Level-Production%20Ready-green)]()  [![Generic badge](https://img.shields.io/badge/Access_Policy-Approval_Required-yellow)]()  [![Generic badge](https://img.shields.io/badge/Data%20Classification-Public-green)]()  ### This endpoint is restricted, it requires the scope: \"vamdatabridges_gorp-latest_get\"      **Data Controller** - Wael Attia  **API Integration Pattern** - This endpoint uses [Hey Jude](https://docs.api.wfp.org/providers/#api-patterns) pattern
+>>>>>>> dev
 
 ### Example
 
@@ -180,10 +195,17 @@ from data_bridges_client.models.gorp_value_with_changes_paged_result import Gorp
 from data_bridges_client.rest import ApiException
 from pprint import pprint
 
+<<<<<<< HEAD
 # Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/4.1.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
     host = "https://api.wfp.org/vam-data-bridges/4.1.0"
+=======
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/4.0.0
+# See configuration.py for a list of all supported configuration parameters.
+configuration = data_bridges_client.Configuration(
+    host = "https://api.wfp.org/vam-data-bridges/4.0.0"
+>>>>>>> dev
 )
 
 # The client must configure the authentication and authorization parameters
@@ -246,7 +268,11 @@ Name | Type | Description  | Notes
 
 Return the full dataset of number of acutely food insecure (in millions) based on WFP Global Operational Response Plan.
 
+<<<<<<< HEAD
   [![Generic badge](https://img.shields.io/badge/Maturity%20Level-Production%20Ready-green)]()  [![Generic badge](https://img.shields.io/badge/Access_Policy-TEC_Architecture_approval_required-yellow)]()  [![Generic badge](https://img.shields.io/badge/Data%20Classification-Public-green)]()  ### This endpoint is restricted, it requires the scope: \"vamdatabridges_gorp-list_get\"      **Data Controller** - Wael ATTIA  **API Integration Pattern** - This endpoint uses [Hey Jude](https://docs.api.wfp.org/providers/#api-patterns) pattern
+=======
+  [![Generic badge](https://img.shields.io/badge/Maturity%20Level-Production%20Ready-green)]()  [![Generic badge](https://img.shields.io/badge/Access_Policy-Approval_Required-yellow)]()  [![Generic badge](https://img.shields.io/badge/Data%20Classification-Public-green)]()  ### This endpoint is restricted, it requires the scope: \"vamdatabridges_gorp-list_get\"      **Data Controller** - Wael Attia  **API Integration Pattern** - This endpoint uses [Hey Jude](https://docs.api.wfp.org/providers/#api-patterns) pattern
+>>>>>>> dev
 
 ### Example
 
@@ -258,10 +284,17 @@ from data_bridges_client.models.gorp_value_with_changes_paged_result import Gorp
 from data_bridges_client.rest import ApiException
 from pprint import pprint
 
+<<<<<<< HEAD
 # Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/4.1.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
     host = "https://api.wfp.org/vam-data-bridges/4.1.0"
+=======
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/4.0.0
+# See configuration.py for a list of all supported configuration parameters.
+configuration = data_bridges_client.Configuration(
+    host = "https://api.wfp.org/vam-data-bridges/4.0.0"
+>>>>>>> dev
 )
 
 # The client must configure the authentication and authorization parameters
@@ -319,6 +352,7 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<<<<<<< HEAD
 # **gorp_regional_latest_get**
 > List[GorpRegionalApiDto] gorp_regional_latest_get(env=env)
 
@@ -395,3 +429,5 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+=======
+>>>>>>> dev

@@ -1,6 +1,10 @@
 # data_bridges_client.CommodityUnitsApi
 
+<<<<<<< HEAD
 All URIs are relative to *https://api.wfp.org/vam-data-bridges/4.1.0*
+=======
+All URIs are relative to *https://api.wfp.org/vam-data-bridges/4.0.0*
+>>>>>>> dev
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -13,7 +17,11 @@ Method | HTTP request | Description
 
 Provides conversion factors to Kilogram or Litres for each convertible unit of measure.
 
+<<<<<<< HEAD
   [![Generic badge](https://img.shields.io/badge/Maturity%20Level-Production%20Ready-green)]()  [![Generic badge](https://img.shields.io/badge/Access_Policy-TEC_Architecture_approval_required-yellow)]()  [![Generic badge](https://img.shields.io/badge/Data%20Classification-Public-green)]()  ### This endpoint is restricted, it requires the scope: \"vamdatabridges_commodityunits-conversion-list_get\"  Some non-standard units of measure might have different a conversion factor based on the country [Adm0Code]; Other non-standard units of measure might have a different conversion factor based on the commodity [CommodityID] being measured. Other cases will have null adm0code and CommodityID. No mandatory parameter.    **Data Controller** - Wael ATTIA  **API Integration Pattern** - This endpoint uses [Hey Jude](https://docs.api.wfp.org/providers/#api-patterns) pattern
+=======
+  [![Generic badge](https://img.shields.io/badge/Maturity%20Level-Production%20Ready-green)]()  [![Generic badge](https://img.shields.io/badge/Access_Policy-Approval_Required-yellow)]()  [![Generic badge](https://img.shields.io/badge/Data%20Classification-Public-green)]()  ### This endpoint is restricted, it requires the scope: \"vamdatabridges_commodityunits-conversion-list_get\"  Some non-standard units of measure might have different a conversion factor based on the country [Adm0Code]; Other non-standard units of measure might have a different conversion factor based on the commodity [CommodityID] being measured. Other cases will have null adm0code and CommodityID. No mandatory parameter.    **Data Controller** - Wael Attia  **API Integration Pattern** - This endpoint uses [Hey Jude](https://docs.api.wfp.org/providers/#api-patterns) pattern
+>>>>>>> dev
 
 ### Example
 
@@ -25,10 +33,17 @@ from data_bridges_client.models.paged_commodity_list_dto import PagedCommodityLi
 from data_bridges_client.rest import ApiException
 from pprint import pprint
 
+<<<<<<< HEAD
 # Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/4.1.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
     host = "https://api.wfp.org/vam-data-bridges/4.1.0"
+=======
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/4.0.0
+# See configuration.py for a list of all supported configuration parameters.
+configuration = data_bridges_client.Configuration(
+    host = "https://api.wfp.org/vam-data-bridges/4.0.0"
+>>>>>>> dev
 )
 
 # The client must configure the authentication and authorization parameters
@@ -101,7 +116,11 @@ Name | Type | Description  | Notes
 
 Provides the detailed list of the unit of measure available in DataBridges platform
 
+<<<<<<< HEAD
   [![Generic badge](https://img.shields.io/badge/Maturity%20Level-Production%20Ready-green)]()  [![Generic badge](https://img.shields.io/badge/Access_Policy-TEC_Architecture_approval_required-yellow)]()  [![Generic badge](https://img.shields.io/badge/Data%20Classification-Public-green)]()  ### This endpoint is restricted, it requires the scope: \"vamdatabridges_commodityunits-list_get\"      **Data Controller** - Wael ATTIA  **API Integration Pattern** - This endpoint uses [Hey Jude](https://docs.api.wfp.org/providers/#api-patterns) pattern
+=======
+  [![Generic badge](https://img.shields.io/badge/Maturity%20Level-Production%20Ready-green)]()  [![Generic badge](https://img.shields.io/badge/Access_Policy-Approval_Required-yellow)]()  [![Generic badge](https://img.shields.io/badge/Data%20Classification-Public-green)]()  ### This endpoint is restricted, it requires the scope: \"vamdatabridges_commodityunits-list_get\"      **Data Controller** - Wael Attia  **API Integration Pattern** - This endpoint uses [Hey Jude](https://docs.api.wfp.org/providers/#api-patterns) pattern
+>>>>>>> dev
 
 ### Example
 
@@ -113,10 +132,17 @@ from data_bridges_client.models.paged_commodity_list_dto import PagedCommodityLi
 from data_bridges_client.rest import ApiException
 from pprint import pprint
 
+<<<<<<< HEAD
 # Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/4.1.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
     host = "https://api.wfp.org/vam-data-bridges/4.1.0"
+=======
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/4.0.0
+# See configuration.py for a list of all supported configuration parameters.
+configuration = data_bridges_client.Configuration(
+    host = "https://api.wfp.org/vam-data-bridges/4.0.0"
+>>>>>>> dev
 )
 
 # The client must configure the authentication and authorization parameters

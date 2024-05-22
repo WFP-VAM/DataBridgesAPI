@@ -33,9 +33,12 @@ data_bridges_client/models/economic_indicator_property.py
 data_bridges_client/models/economic_indicator_property_paged_result.py
 data_bridges_client/models/feature.py
 data_bridges_client/models/geometry.py
+<<<<<<< HEAD
 data_bridges_client/models/gorp_country_api_dto.py
 data_bridges_client/models/gorp_global_api_dto.py
 data_bridges_client/models/gorp_regional_api_dto.py
+=======
+>>>>>>> dev
 data_bridges_client/models/gorp_value_with_changes.py
 data_bridges_client/models/gorp_value_with_changes_paged_result.py
 data_bridges_client/models/household_survey_list_dto.py
@@ -96,9 +99,12 @@ docs/Feature.md
 docs/FoodSecurityApi.md
 docs/Geometry.md
 docs/GorpApi.md
+<<<<<<< HEAD
 docs/GorpCountryApiDto.md
 docs/GorpGlobalApiDto.md
 docs/GorpRegionalApiDto.md
+=======
+>>>>>>> dev
 docs/GorpValueWithChanges.md
 docs/GorpValueWithChangesPagedResult.md
 docs/HouseholdSurveyListDTO.md
@@ -170,9 +176,12 @@ test/test_feature.py
 test/test_food_security_api.py
 test/test_geometry.py
 test/test_gorp_api.py
+<<<<<<< HEAD
 test/test_gorp_country_api_dto.py
 test/test_gorp_global_api_dto.py
 test/test_gorp_regional_api_dto.py
+=======
+>>>>>>> dev
 test/test_gorp_value_with_changes.py
 test/test_gorp_value_with_changes_paged_result.py
 test/test_household_survey_list_dto.py
