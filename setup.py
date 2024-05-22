@@ -23,7 +23,7 @@ from setuptools import setup, find_packages  # noqa: H301
 # http://pypi.python.org/pypi/setuptools
 NAME = "data-bridges-client"
 VERSION = "4.1.0"
-PYTHON_REQUIRES = ">=3.11"
+PYTHON_REQUIRES = ">=3.9"
 REQUIRES = [
     "urllib3 >= 1.25.3, < 2.1.0",
     "httpx",
@@ -31,7 +31,7 @@ REQUIRES = [
     "pydantic >= 2",
     "typing-extensions >= 4.7.1",
     "PyYAML", 
-    "pandas",
+    "pandas >= 2" ,
     "pystata",
     "stata-setup",
 ]
