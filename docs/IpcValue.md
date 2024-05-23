@@ -36,12 +36,12 @@ json = "{}"
 # create an instance of IpcValue from a JSON string
 ipc_value_instance = IpcValue.from_json(json)
 # print the JSON string representation of the object
-print IpcValue.to_json()
+print(IpcValue.to_json())
 
 # convert the object into a dict
 ipc_value_dict = ipc_value_instance.to_dict()
 # create an instance of IpcValue from a dict
-ipc_value_form_dict = ipc_value.from_dict(ipc_value_dict)
+ipc_value_from_dict = IpcValue.from_dict(ipc_value_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

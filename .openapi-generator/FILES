@@ -1,7 +1,6 @@
 .github/workflows/python.yml
 .gitignore
 .gitlab-ci.yml
-.openapi-generator-ignore
 .travis.yml
 README.md
 data_bridges_client/__init__.py
@@ -70,8 +69,11 @@ data_bridges_client/models/view_extended_aggregated_price_paged_result.py
 data_bridges_client/models/view_extended_alps_value.py
 data_bridges_client/models/view_extended_alps_value_paged_result.py
 data_bridges_client/models/weekly_aggregated_price.py
-data_bridges_client/models/xls_form_definition_dto.py
+data_bridges_client/models/xls_form_definition_new_schema_dto.py
 data_bridges_client/models/xls_form_dto.py
+data_bridges_client/models/xls_form_fields_dto.py
+data_bridges_client/models/xls_form_list_choice_dto.py
+data_bridges_client/models/xls_form_list_choices_dto.py
 data_bridges_client/py.typed
 data_bridges_client/rest.py
 docs/BadRequestDTO.md
@@ -133,7 +135,10 @@ docs/ViewExtendedAlpsValue.md
 docs/ViewExtendedAlpsValuePagedResult.md
 docs/WeeklyAggregatedPrice.md
 docs/XlsFormDTO.md
-docs/XlsFormDefinitionDTO.md
+docs/XlsFormDefinitionNewSchemaDTO.md
+docs/XlsFormFieldsDTO.md
+docs/XlsFormListChoiceDTO.md
+docs/XlsFormListChoicesDTO.md
 docs/XlsFormsApi.md
 git_push.sh
 pyproject.toml
@@ -200,7 +205,10 @@ test/test_view_extended_aggregated_price_paged_result.py
 test/test_view_extended_alps_value.py
 test/test_view_extended_alps_value_paged_result.py
 test/test_weekly_aggregated_price.py
-test/test_xls_form_definition_dto.py
+test/test_xls_form_definition_new_schema_dto.py
 test/test_xls_form_dto.py
+test/test_xls_form_fields_dto.py
+test/test_xls_form_list_choice_dto.py
+test/test_xls_form_list_choices_dto.py
 test/test_xls_forms_api.py
 tox.ini

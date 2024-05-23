@@ -42,12 +42,12 @@ json = "{}"
 # create an instance of CommodityPriceDTO from a JSON string
 commodity_price_dto_instance = CommodityPriceDTO.from_json(json)
 # print the JSON string representation of the object
-print CommodityPriceDTO.to_json()
+print(CommodityPriceDTO.to_json())
 
 # convert the object into a dict
 commodity_price_dto_dict = commodity_price_dto_instance.to_dict()
 # create an instance of CommodityPriceDTO from a dict
-commodity_price_dto_form_dict = commodity_price_dto.from_dict(commodity_price_dto_dict)
+commodity_price_dto_from_dict = CommodityPriceDTO.from_dict(commodity_price_dto_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

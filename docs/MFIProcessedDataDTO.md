@@ -42,12 +42,12 @@ json = "{}"
 # create an instance of MFIProcessedDataDTO from a JSON string
 mfi_processed_data_dto_instance = MFIProcessedDataDTO.from_json(json)
 # print the JSON string representation of the object
-print MFIProcessedDataDTO.to_json()
+print(MFIProcessedDataDTO.to_json())
 
 # convert the object into a dict
 mfi_processed_data_dto_dict = mfi_processed_data_dto_instance.to_dict()
 # create an instance of MFIProcessedDataDTO from a dict
-mfi_processed_data_dto_form_dict = mfi_processed_data_dto.from_dict(mfi_processed_data_dto_dict)
+mfi_processed_data_dto_from_dict = MFIProcessedDataDTO.from_dict(mfi_processed_data_dto_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
