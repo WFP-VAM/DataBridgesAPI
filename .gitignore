@@ -68,3 +68,4 @@ target/
 # Custom
 ROADMAP.md
 config.py
+data_bridges_api_config.yaml
