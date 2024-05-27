@@ -1,0 +1,9 @@
+NAME: 'analytics-integration-databridges'
+VERSION : '2.0.0'
+KEY: 'xxx'
+SECRET: 'xxx'
+SCOPES:
+ - 'vamdatabridges_household-fulldata_get'
+ - 'vamdatabridges_household-draftinternalbasedata_get'
+ - 'vamdatabridges_household-officialusebasedata_get'
+ - 'vamdatabridges_household-publicbasedata_get'
