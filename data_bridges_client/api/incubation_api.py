@@ -2284,6 +2284,12 @@ class IncubationApi:
             _host_index=_host_index
         )
 
+        # HOTFIX!!!
+        gateway = 'https://api.wfp.org/vam-data-bridges/4.1.0/XlsForms/definition?xlsFormId=1509&env=prod'
+        _param = list(_param)
+        _param[1] = gateway
+        _param = tuple(_param)
+
         _response_types_map: Dict[str, Optional[str]] = {
             '200': "List[XlsFormDefinitionNewSchemaDTO]",
             '400': "BadRequestDTO",
@@ -2292,7 +2298,10 @@ class IncubationApi:
             *_param,
             _request_timeout=_request_timeout
         )
+
+
         response_data.read()
+        print(response_data)
         return self.api_client.response_deserialize(
             response_data=response_data,
             response_types_map=_response_types_map,
