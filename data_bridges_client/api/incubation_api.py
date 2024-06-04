@@ -2285,13 +2285,11 @@ class IncubationApi:
         )
 
         # HOTFIX!!!
-        print(f"Param:{_param}")
-
-
-         gateway = 'https://api.wfp.org/'
+        gateway = 'https://api.wfp.org/'
         _param = list(_param)
         _param[1] = _param[1].replace("https://api.vam.wfp.org/", gateway)
         _param = tuple(_param)
+
 
         _response_types_map: Dict[str, Optional[str]] = {
             '200': "List[XlsFormDefinitionNewSchemaDTO]",
@@ -2304,7 +2302,6 @@ class IncubationApi:
 
 
         response_data.read()
-        print(response_data)
         return self.api_client.response_deserialize(
             response_data=response_data,
             response_types_map=_response_types_map,
