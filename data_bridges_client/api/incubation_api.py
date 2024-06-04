@@ -2285,9 +2285,12 @@ class IncubationApi:
         )
 
         # HOTFIX!!!
-        gateway = 'https://api.wfp.org/vam-data-bridges/4.1.0/XlsForms/definition?xlsFormId=1509&env=prod'
+        print(f"Param:{_param}")
+
+
+         gateway = 'https://api.wfp.org/'
         _param = list(_param)
-        _param[1] = gateway
+        _param[1] = _param[1].replace("https://api.vam.wfp.org/", gateway)
         _param = tuple(_param)
 
         _response_types_map: Dict[str, Optional[str]] = {
