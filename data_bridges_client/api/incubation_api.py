@@ -2285,10 +2285,13 @@ class IncubationApi:
         )
 
         # HOTFIX!!!
-        gateway = 'https://api.wfp.org/'
+
+        url = _param[1]
         _param = list(_param)
-        _param[1] = _param[1].replace("https://api.vam.wfp.org/", gateway)
+        url = url.replace("https://api.vam.wfp.org/","https://api.wfp.org/")
+        _param[1] = url
         _param = tuple(_param)
+        # print(_param)
 
 
         _response_types_map: Dict[str, Optional[str]] = {
