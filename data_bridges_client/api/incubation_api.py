@@ -2291,7 +2291,7 @@ class IncubationApi:
         url = url.replace("https://api.vam.wfp.org/","https://api.wfp.org/")
         _param[1] = url
         _param = tuple(_param)
-        # print(_param)
+        print(_param)
 
 
         _response_types_map: Dict[str, Optional[str]] = {
