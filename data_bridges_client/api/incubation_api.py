@@ -2289,6 +2289,7 @@ class IncubationApi:
         url = _param[1]
         _param = list(_param)
         url = url.replace("https://api.vam.wfp.org/","https://api.wfp.org/")
+        url = url.replace("2.0.0", "4.1.0")
         _param[1] = url
         _param = tuple(_param)
         # print(_param)
