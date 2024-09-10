@@ -18,7 +18,7 @@ Python 3.7+
 If the python package is hosted on a repository, you can install directly using:
 
 ```sh
-pip install git+https://github.com/WFP-VAM/DataBridgesAPI.git
+pip install git+https://github.com/WFP-VAM/DataBridgesAPI.git@release/v4.1
 ```
 (you may need to run `pip` with root permission: `sudo pip install git+https://github.com/WFP-VAM/DataBridgesAPI.git`)
 
