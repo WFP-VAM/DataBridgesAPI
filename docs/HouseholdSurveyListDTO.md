@@ -27,9 +27,11 @@ Name | Type | Description | Notes
 **survey_category_name** | **str** |  | [optional] 
 **survey_sub_category_name** | **str** |  | [optional] 
 **survey_phase_name** | **str** |  | [optional] 
-**survey_visibilty** | **str** |  | [optional] 
+**survey_visibility** | **str** |  | [optional] 
 **is_continuous_monitoring** | **bool** |  | [optional] 
 **survey_name** | **str** |  | [optional] 
+**xls_form_id** | **int** |  | [optional] 
+**base_xls_form_id** | **int** |  | [optional] 
 
 ## Example
 

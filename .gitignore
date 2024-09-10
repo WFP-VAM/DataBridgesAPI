@@ -64,5 +64,3 @@ target/
 
 #Ipython Notebook
 .ipynb_checkpoints
-data_bridges_api_config.yaml
-ROADMAP.md
