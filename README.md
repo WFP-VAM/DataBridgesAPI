@@ -53,19 +53,21 @@ Please follow the [installation procedure](#installation--usage) and then run th
 
 import data_bridges_client
 from data_bridges_client.rest import ApiException
+from data_bridges_client.token import 
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: default
 KEY = ''
 SECRET = ''
+SCOPES = ['', '']
 token = WfpApiToken(api_key=KEY, api_secret=SECRET)
 
 # Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/1.4.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/4.1.0"
+    host = "https://api.wfp.org/vam-data-bridges/5.0.0"
 )
-configuration.access_token = token.refresh()
+configuration.access_token = token.refresh(scopes=SCOPES)
 
 # Enter a context with an instance of the API client
 with data_bridges_client.ApiClient(configuration) as api_client:
@@ -90,7 +92,7 @@ with data_bridges_client.ApiClient(configuration) as api_client:
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://api.wfp.org/vam-data-bridges/4.1.0*
+All URIs are relative to *https://api.wfp.org/vam-data-bridges/5.0.0*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
