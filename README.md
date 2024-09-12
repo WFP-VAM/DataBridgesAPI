@@ -53,7 +53,7 @@ Please follow the [installation procedure](#installation--usage) and then run th
 
 import data_bridges_client
 from data_bridges_client.rest import ApiException
-from data_bridges_client.token import 
+from data_bridges_client.token import WfpApiToken
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: default
