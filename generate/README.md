@@ -6,7 +6,10 @@ Every time
 1. Create a new branch `git checkout -b new_branch_name`
 2. Install openapi-generator
 
-```npm install @openapitools/openapi-generator-cli -g```
+```npm install @openapitools/openapi-generator-cli -g``
+
+Make sure that the npm and its packages are in the PATH.
+
 
 2. Place the latest swagger.json in `./generate/swagger.json`
 
