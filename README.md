@@ -92,7 +92,7 @@ with data_bridges_client.ApiClient(configuration) as api_client:
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://api.wfp.org/vam-data-bridges/5.0.0*
+All URIs are relative to *https://api.wfp.org/vam-data-bridges/5.1.0*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------

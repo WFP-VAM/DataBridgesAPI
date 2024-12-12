@@ -7221,7 +7221,7 @@
     "version" : "4.1.0"
   }, {
     "changes" : "\n*What's Changed*:\n- Changed response schema and added _apiKey_ query parameter to GET /Household/DraftInternalBaseData (Non-backward compatible)\n- Changed response schema and added _apiKey_ query parameter to GET /Household/FullData (Non-backward compatible)\n- Changed response schema and added _surveyId_ query parameter to GET /Household/Surveys \n- Minor changes to summaries\n",
-    "version" : "5.0.0"
+    "version" : "5.1.0"
   }, {
     "changes" : "\n\n\n*What's New*:\n- GET /MFI/Surveys/ProcessedDataWithKeysetPagination",
     "version" : "5.1.0"
