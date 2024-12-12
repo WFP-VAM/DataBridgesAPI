@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **total_items** | **int** | The total number of items | [optional] 
 **page** | **int** | The current page | [optional] 
+**scroll_id** | **int** |  | [optional] 
 **items** | [**List[MFIProcessedDataDTO]**](MFIProcessedDataDTO.md) | The list of processed data | [optional] 
 
 ## Example

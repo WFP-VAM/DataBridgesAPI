@@ -1,6 +1,6 @@
 # data_bridges_client.GorpApi
 
-All URIs are relative to *https://api.wfp.org/vam-data-bridges/5.0.0*
+All URIs are relative to *https://api.wfp.org/vam-data-bridges/5.1.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -28,10 +28,10 @@ from data_bridges_client.models.gorp_country_api_dto import GorpCountryApiDto
 from data_bridges_client.rest import ApiException
 from pprint import pprint
 
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/5.0.0
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/5.1.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/5.0.0"
+    host = "https://api.wfp.org/vam-data-bridges/5.1.0"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -82,7 +82,7 @@ Name | Type | Description  | Notes
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Success |  -  |
+**200** | OK |  -  |
 **400** | Bad Request |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -104,10 +104,10 @@ from data_bridges_client.models.gorp_global_api_dto import GorpGlobalApiDto
 from data_bridges_client.rest import ApiException
 from pprint import pprint
 
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/5.0.0
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/5.1.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/5.0.0"
+    host = "https://api.wfp.org/vam-data-bridges/5.1.0"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -158,7 +158,7 @@ Name | Type | Description  | Notes
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Success |  -  |
+**200** | OK |  -  |
 **400** | Bad Request |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -180,10 +180,10 @@ from data_bridges_client.models.gorp_value_with_changes_paged_result import Gorp
 from data_bridges_client.rest import ApiException
 from pprint import pprint
 
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/5.0.0
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/5.1.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/5.0.0"
+    host = "https://api.wfp.org/vam-data-bridges/5.1.0"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -236,7 +236,7 @@ Name | Type | Description  | Notes
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Success |  -  |
+**200** | OK |  -  |
 **400** | Bad Request |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -258,10 +258,10 @@ from data_bridges_client.models.gorp_value_with_changes_paged_result import Gorp
 from data_bridges_client.rest import ApiException
 from pprint import pprint
 
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/5.0.0
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/5.1.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/5.0.0"
+    host = "https://api.wfp.org/vam-data-bridges/5.1.0"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -314,7 +314,7 @@ Name | Type | Description  | Notes
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Success |  -  |
+**200** | OK |  -  |
 **400** | Bad Request |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -336,10 +336,10 @@ from data_bridges_client.models.gorp_regional_api_dto import GorpRegionalApiDto
 from data_bridges_client.rest import ApiException
 from pprint import pprint
 
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/5.0.0
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/5.1.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/5.0.0"
+    host = "https://api.wfp.org/vam-data-bridges/5.1.0"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -390,7 +390,7 @@ Name | Type | Description  | Notes
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Success |  -  |
+**200** | OK |  -  |
 **400** | Bad Request |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
