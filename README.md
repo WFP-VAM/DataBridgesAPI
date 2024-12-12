@@ -65,7 +65,7 @@ token = WfpApiToken(api_key=KEY, api_secret=SECRET)
 # Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/1.4.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/5.0.0"
+    host = "https://api.wfp.org/vam-data-bridges/5.1.0"
 )
 configuration.access_token = token.refresh(scopes=SCOPES)
 
