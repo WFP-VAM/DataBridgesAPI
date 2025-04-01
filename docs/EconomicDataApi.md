@@ -1,6 +1,6 @@
 # data_bridges_client.EconomicDataApi
 
-All URIs are relative to *https://api.wfp.org/vam-data-bridges/5.0.0*
+All URIs are relative to *https://api.wfp.org/vam-data-bridges/6.0.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -25,10 +25,10 @@ from data_bridges_client.models.economic_indicator_property_paged_result import 
 from data_bridges_client.rest import ApiException
 from pprint import pprint
 
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/5.0.0
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/6.0.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/5.0.0"
+    host = "https://api.wfp.org/vam-data-bridges/6.0.0"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -87,7 +87,7 @@ Name | Type | Description  | Notes
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Success |  -  |
+**200** | OK |  -  |
 **400** | Bad Request |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -109,10 +109,10 @@ from data_bridges_client.models.paged_economic_data_dto import PagedEconomicData
 from data_bridges_client.rest import ApiException
 from pprint import pprint
 
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/5.0.0
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/6.0.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/5.0.0"
+    host = "https://api.wfp.org/vam-data-bridges/6.0.0"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -175,7 +175,7 @@ Name | Type | Description  | Notes
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Success |  -  |
+**200** | OK |  -  |
 **400** | Bad Request |  -  |
 **404** | Not Found |  -  |
 

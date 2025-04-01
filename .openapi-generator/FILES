@@ -36,8 +36,6 @@ data_bridges_client/models/geometry.py
 data_bridges_client/models/gorp_country_api_dto.py
 data_bridges_client/models/gorp_global_api_dto.py
 data_bridges_client/models/gorp_regional_api_dto.py
-data_bridges_client/models/gorp_value_with_changes.py
-data_bridges_client/models/gorp_value_with_changes_paged_result.py
 data_bridges_client/models/household_survey_list_dto.py
 data_bridges_client/models/household_survey_list_dto_paged_result.py
 data_bridges_client/models/ipc_value.py
@@ -99,8 +97,6 @@ docs/GorpApi.md
 docs/GorpCountryApiDto.md
 docs/GorpGlobalApiDto.md
 docs/GorpRegionalApiDto.md
-docs/GorpValueWithChanges.md
-docs/GorpValueWithChangesPagedResult.md
 docs/HouseholdSurveyListDTO.md
 docs/HouseholdSurveyListDTOPagedResult.md
 docs/IncubationApi.md
@@ -173,8 +169,6 @@ test/test_gorp_api.py
 test/test_gorp_country_api_dto.py
 test/test_gorp_global_api_dto.py
 test/test_gorp_regional_api_dto.py
-test/test_gorp_value_with_changes.py
-test/test_gorp_value_with_changes_paged_result.py
 test/test_household_survey_list_dto.py
 test/test_household_survey_list_dto_paged_result.py
 test/test_incubation_api.py
