@@ -7,16 +7,20 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ipc_id** | **int** |  | [optional] 
 **ipc_year** | **int** |  | [optional] 
+**ipc_update_date** | **datetime** |  | [optional] 
 **iso3_alpha3** | **str** |  | [optional] 
-**ipc_is_latest_value** | **bool** |  | [optional] 
 **ipc_country_name** | **str** |  | [optional] 
 **ipc_area_name** | **str** |  | [optional] 
 **ipc_phase3_population** | **int** |  | [optional] 
 **ipc_phase4_population** | **int** |  | [optional] 
 **ipc_phase5_population** | **int** |  | [optional] 
+**ipc_phase35population** | **int** |  | [optional] 
+**ipc_phase45population** | **int** |  | [optional] 
 **ipc_phase3_percentage** | **float** |  | [optional] 
 **ipc_phase4_percentage** | **float** |  | [optional] 
 **ipc_phase5_percentage** | **float** |  | [optional] 
+**ipc_phase35percentage** | **float** |  | [optional] 
+**ipc_phase45percentage** | **float** |  | [optional] 
 **ipc_analysed_population** | **int** |  | [optional] 
 **ipc_analysed_percentage** | **float** |  | [optional] 
 **ipc_analysis_comment** | **str** |  | [optional] 
@@ -24,7 +28,8 @@ Name | Type | Description | Notes
 **ipc_data_source** | **str** |  | [optional] 
 **ipc_reference_period** | **str** |  | [optional] 
 **ipc_create_date** | **datetime** |  | [optional] 
-**ipc_update_date** | **datetime** |  | [optional] 
+**ipc_show_on_data_viz** | **bool** |  | [optional] 
+**ipc_is_latest_value** | **bool** |  | [optional] 
 
 ## Example
 

@@ -1,6 +1,6 @@
 # data_bridges_client.MarketPricesApi
 
-All URIs are relative to *https://api.wfp.org/vam-data-bridges/5.1.0*
+All URIs are relative to *https://api.wfp.org/vam-data-bridges/6.0.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -28,10 +28,10 @@ from data_bridges_client.models.view_extended_alps_value_paged_result import Vie
 from data_bridges_client.rest import ApiException
 from pprint import pprint
 
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/5.1.0
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/6.0.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/5.1.0"
+    host = "https://api.wfp.org/vam-data-bridges/6.0.0"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -126,10 +126,10 @@ from data_bridges_client.models.view_extended_aggregated_price_paged_result impo
 from data_bridges_client.rest import ApiException
 from pprint import pprint
 
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/5.1.0
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/6.0.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/5.1.0"
+    host = "https://api.wfp.org/vam-data-bridges/6.0.0"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -224,10 +224,10 @@ from data_bridges_client.models.view_extended_aggregated_price_paged_result impo
 from data_bridges_client.rest import ApiException
 from pprint import pprint
 
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/5.1.0
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/6.0.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/5.1.0"
+    host = "https://api.wfp.org/vam-data-bridges/6.0.0"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -322,10 +322,10 @@ from data_bridges_client.models.paged_commodity_price_list_dto import PagedCommo
 from data_bridges_client.rest import ApiException
 from pprint import pprint
 
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/5.1.0
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/6.0.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/5.1.0"
+    host = "https://api.wfp.org/vam-data-bridges/6.0.0"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -420,10 +420,10 @@ from data_bridges_client.models.paged_commodity_weekly_aggregated_price_list_dto
 from data_bridges_client.rest import ApiException
 from pprint import pprint
 
-# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/5.1.0
+# Defining the host is optional and defaults to https://api.wfp.org/vam-data-bridges/6.0.0
 # See configuration.py for a list of all supported configuration parameters.
 configuration = data_bridges_client.Configuration(
-    host = "https://api.wfp.org/vam-data-bridges/5.1.0"
+    host = "https://api.wfp.org/vam-data-bridges/6.0.0"
 )
 
 # The client must configure the authentication and authorization parameters
